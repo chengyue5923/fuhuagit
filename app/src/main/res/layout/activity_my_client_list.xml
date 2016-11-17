@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e6e6eb"
+    android:orientation="vertical">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:layout_width="match_parent"
+        app:mToolBar_title="我的客户"
+        android:id="@+id/plannerWorkToor"
+        app:mToolBar_rightText="显示备注"
+        app:mToolBar_showRightText="true"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#f9f9f9"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="姓名"
+            android:textSize="16sp"
+            android:textColor="#96969b"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="资产总额"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:textColor="#96969b"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="级别"
+            android:layout_alignParentRight="true"
+            android:textSize="16sp"
+            android:textColor="#96969b"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/myClientList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@color/ht_diverLine"
+        android:dividerHeight="1px"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

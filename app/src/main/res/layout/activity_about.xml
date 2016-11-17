@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:id="@+id/systemMessageToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mToolBar_title="关于" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:id="@+id/imagesView"
+                android:src="@mipmap/iconsa"
+                android:layout_width="@dimen/Eighty"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/Eighty" />
+            <TextView
+                android:id="@+id/fuhua"
+                android:layout_below="@id/imagesView"
+                android:text="复华资产"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/seventeenDp"
+                android:textColor="@color/selected_main_title"
+                android:layout_marginTop="@dimen/twelvetyDp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_below="@+id/fuhua"
+                android:layout_marginTop="@dimen/eightDp"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/texthintColor"
+                android:textSize="@dimen/ninesp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/introText"
+                android:gravity="center_horizontal"
+                android:textColor="@color/selected_main_title"
+                android:textSize="@dimen/thirteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/bottomtext"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="\@2016 All rights reserved"
+                android:textSize="@dimen/tenSp"
+                android:layout_marginBottom="@dimen/eighteenSp"
+                android:textColor="@color/texthintColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:text="复华资产"
+                android:layout_marginBottom="@dimen/eightDp"
+                android:textColor="@color/texthintColor"
+                android:textSize="@dimen/thirteenSp"
+                android:layout_above="@id/bottomtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/tenDp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginRight="@dimen/tenDp"
+        android:layout_marginLeft="@dimen/tenDp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/common_selector_bg"
+        android:paddingBottom="@dimen/twoDp"
+        android:paddingTop="25dp">
+
+        <ImageView
+            android:id="@+id/report_item_image"
+            android:layout_width="83dp"
+            android:layout_height="84dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_error" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/report_item_image"
+            android:orientation="vertical"
+            android:paddingBottom="7dp"
+            android:paddingLeft="21dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/report_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="[基金经理特点] 专注个股选择遵循相对价值"
+                android:textColor="@color/selected_main_title"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_marginTop="@dimen/tenDp"
+                android:layout_below="@id/report_item_title"
+                android:id="@+id/report_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/selected_deputy_text"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="投资理念，灵活且果断的操风格。灵活且果断的操风格灵活且果断的操风格"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/report_item_time"
+            android:layout_alignBottom="@id/report_item_image"
+            android:layout_marginLeft="@dimen/twentytwoDp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/report_item_image"
+            android:textColor="#9A9A9F"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:drawablePadding="@dimen/fiveDp"
+            android:drawableLeft="@drawable/eye_view"
+            android:layout_alignBottom="@id/report_item_image"
+            android:id="@+id/report_item_bumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9A9A9F"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textSize="10sp" />
+        <CheckBox
+            android:id="@+id/reportCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/collect_checkbox_selector"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

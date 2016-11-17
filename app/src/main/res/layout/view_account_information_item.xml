@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/selected_line_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6e6eb"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="37dp">
+
+        <TextView
+            android:layout_marginTop="@dimen/twelvetyDp"
+            android:layout_marginBottom="@dimen/twelvetyDp"
+            android:id="@+id/time_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tt_message_title_time_bg"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingRight="@dimen/tenDp"
+            android:paddingLeft="@dimen/tenDp"
+            android:text="2016-06-30"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/twelvetyDp"
+            android:layout_marginLeft="@dimen/twelvetyDp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/adapter_account_information"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/system_msg_item_title"
+                android:layout_height="wrap_content"
+                android:text="购买产品到账消息"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/productAddress"
+                android:textColor="@color/textpassColor"
+                android:textSize="@dimen/twelvetySp"
+                android:layout_marginLeft="@dimen/thirtyonedp"
+                android:layout_marginTop="@dimen/twentyfivedp"
+                android:text="购买产品：复华丽江二号院"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/getAccountTime"
+                android:textColor="@color/textpassColor"
+                android:textSize="@dimen/twelvetySp"
+                android:layout_marginLeft="@dimen/thirtyonedp"
+                android:layout_marginTop="@dimen/twelvetyDp"
+                android:text="到账时间：2015-12-11  09:43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/numberText"
+                android:textColor="@color/textpassColor"
+                android:textSize="@dimen/twelvetySp"
+                android:layout_marginLeft="@dimen/thirtyonedp"
+                android:layout_marginTop="@dimen/twelvetyDp"
+                android:layout_marginBottom="@dimen/twelvetyDp"
+                android:text="到账金额：1500,000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

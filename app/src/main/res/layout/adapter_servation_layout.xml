@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/thirteenDp"
+        android:layout_centerVertical="true"
+        android:id="@+id/accountImage"
+        android:layout_marginBottom="@dimen/textSixteenDp"
+        android:layout_marginTop="@dimen/textSixteenDp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="@dimen/tenDp"
+            android:id="@+id/accountImageView"
+            android:background="@mipmap/deletes"
+            android:layout_width="@dimen/fifityDp"
+            android:layout_height="@dimen/fifityDp" />
+        <TextView
+            android:id="@+id/tab_unread_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/navi_number"
+            android:layout_marginRight="-8dp"
+            android:layout_alignRight="@+id/accountImageView"
+            android:gravity="center"
+            android:text="12"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginRight="@dimen/thirteenDp"
+        android:layout_marginLeft="@dimen/elevenDps"
+        android:layout_marginTop="@dimen/threeDp"
+        android:layout_alignTop="@id/accountImage"
+        android:layout_toRightOf="@id/accountImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/accountName"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textpassColor"
+            android:textSize="@dimen/fiveteensp"
+            android:text="李洁洁"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/lastDate"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/tenSp"
+            android:text="11:01"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/cententText"
+            android:textColor="@color/message_body_text_color"
+            android:textSize="@dimen/fiveteensp"
+            android:text="复华奥瑞澳洲机会基金复华奥瑞澳洲基金机会复华奥瑞澳洲机会基金复华奥瑞澳洲基金机会"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginBottom="@dimen/threeDp"
+            android:layout_marginRight="@dimen/thirteenDp"
+            android:layout_marginLeft="@dimen/elevenDps"
+            android:layout_alignBottom="@id/accountImage"
+            android:layout_toRightOf="@id/accountImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

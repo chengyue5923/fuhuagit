@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/selected_line_color"
+    android:layout_height="match_parent">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:layout_alignParentTop="true"
+        android:id="@+id/personDetailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mToolBar_title="@string/change_login_name_person"
+        app:mToolBar_titleColor="@color/activity_text_color" />
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/twentyDp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <View
+            android:id="@+id/exitLoginTopline"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:background="@color/redlinecolor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"></View>
+        <TextView
+            android:id="@+id/loginText"
+            android:background="@color/backcolor"
+            android:layout_alignParentRight="true"
+
+            android:text="验证"
+            android:textSize="12sp"
+            android:layout_marginRight="@dimen/fiveDp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="@dimen/nintyfiveDp"
+            android:layout_height="@dimen/thirtyfivedp" />
+        <EditText
+            android:background="@null"
+            android:layout_toLeftOf="@id/loginText"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:id="@+id/loginnameTextView"
+            android:layout_centerVertical="true"
+            android:text="xeonkjsd"
+            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/sixteenDp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/exitLoginBottomline"
+            android:layout_alignParentBottom="true"
+            android:background="@color/redlinecolor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"></View>
+    </RelativeLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/loginRedText"
+        android:text="登录名已存在"
+        android:layout_marginLeft="@dimen/tenDp"
+        android:layout_marginTop="@dimen/tenDp"
+        android:textColor="@color/redlinecolor"
+        android:textSize="@dimen/elevenDp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fiveteenDp" />
+    <TextView
+        android:id="@+id/confirmButton"
+        android:text="提交"
+        android:background="@drawable/common_blue_selector_bg"
+        android:layout_marginRight="@dimen/tenDp"
+        android:layout_marginLeft="@dimen/tenDp"
+        android:layout_marginTop="@dimen/fiveteenDp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/fiveteensp"
+        android:textColor="@color/white"
+        android:layout_height="@dimen/fourtynineDp" />
+</LinearLayout>

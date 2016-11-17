@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:background="@color/linecolor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/elevenDps"></View>
+    <com.fhzc.app.android.android.ui.view.widget.PullableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.fhzc.app.android.android.ui.view.widget.ListViewForScrollView
+                android:visibility="visible"
+                android:id="@+id/collectionListView"
+                android:divider="@color/linecolor"
+                android:layout_marginLeft="@dimen/thirteenDp"
+                android:layout_marginRight="@dimen/thirteenDp"
+                android:dividerHeight="@dimen/line_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.fhzc.app.android.android.ui.view.widget.ListViewForScrollView>
+            <LinearLayout
+                android:visibility="gone"
+                android:padding="@dimen/twelvetyDp"
+                android:id="@+id/system_page_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.fhzc.app.android.android.ui.view.widget.PullableScrollView>
+
+</LinearLayout>

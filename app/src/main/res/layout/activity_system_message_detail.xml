@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mToolBar_title="公告详情" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="您购买的复华奥瑞澳洲机会基金已成立"
+            android:textColor="@color/selected_main_title"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="25dp"
+            android:paddingTop="10dp"
+            android:text="2016-06-30   11:20"
+            android:textColor="#A1A1A5"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/linecolor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingTop="22dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="尊敬的李轶女士您好：
+    您购买的复华奥瑞澳洲机会基金已于2016年6月30日成立，具体产品详情联系理财师为您解答。
+感谢您对复华资产的支持，祝您生活愉快！
+
+复华资产管理有限公司
+2016年6月30日" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6eb"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:id="@+id/arrivalMessageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:background="@drawable/common_selector_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="23dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/list_tappable"
+                    android:paddingLeft="0dp"
+
+                    android:text="查看到账消息"
+                    android:textColor="#46464B"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clipChildren="false"
+                android:layerType="software"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="资产配置比例"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+                <!--<com.github.mikephil.charting.charts.PieChart-->
+                <!--android:layout_width="match_parent"-->
+
+                <!--android:id="@+id/pieChart"-->
+                <!--android:layout_height="220dp"/>-->
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/linecolor" />
+
+                <com.fhzc.app.android.android.ui.view.widget.NoScrollListView
+                    android:id="@+id/pieChartLv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:scrollbars="none">
+
+                </com.fhzc.app.android.android.ui.view.widget.NoScrollListView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="产品兑付日期进度"
+                        android:textColor="#46464B"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e6e6eb" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="fill_parent"
+                    android:scrollbars="none">
+
+                    <com.fhzc.app.android.android.ui.view.widget.NoScrollListView
+                        android:id="@+id/productCycleLv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="13dp"
+                        android:background="@color/white"
+                        android:divider="#e6e6eb"
+                        android:dividerHeight="1dp"
+                        android:focusable="false"
+                        android:listSelector="@color/transparence" />
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/historyLayout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:background="@drawable/lay_account_bt"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:paddingRight="10dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="持仓产品动态"-->
+                        <!--android:textColor="#46464B"-->
+                        <!--android:textSize="16sp" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="历史投资"-->
+                        <!--android:textColor="@color/appColorBlue"-->
+                        <!--android:textSize="16sp" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#e6e6eb" />-->
+
+                <!--<com.fhzc.app.android.android.ui.view.widget.ListViewForScrollView-->
+                    <!--android:id="@+id/historyListView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:divider="@color/linecolor"-->
+                    <!--android:dividerHeight="@dimen/tenDp"-->
+                    <!--android:scrollbars="none"-->
+                    <!--android:visibility="visible" />-->
+
+                <LinearLayout
+                    android:id="@+id/historyProductLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/common_selector_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="23dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/list_tappable"
+                        android:paddingLeft="0dp"
+                        android:text="历史投资"
+                        android:textColor="#46464B"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/linecolor" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/tenDp"
+            android:background="#efeef4"
+            android:layout_width="match_parent"
+            android:paddingBottom="38dp"
+            android:layout_height="wrap_content">
+            <TextView
+            android:textSize="12sp"
+            android:layout_marginTop="24dp"
+            android:textColor="#9f9ea4"
+            android:text="投资声明"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:textColor="#9f9ea4"
+            android:text="1.产品持仓信息于产品成立后20个工作日内更新;"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"
+            android:textColor="#9f9ea4"
+            android:text="2.实际更新时间以北京复华资产管理有限公司发布数据为准;"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"
+            android:textColor="#9f9ea4"
+            android:text="3.如有疑问，请拨打客服电话：400-610-6100;"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+</LinearLayout>

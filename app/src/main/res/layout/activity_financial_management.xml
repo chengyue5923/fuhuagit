@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:layout_alignParentTop="true"
+        android:id="@+id/rightDetailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mToolBar_background="@color/transparence"
+        app:mToolBar_rightImage="@drawable/title_message"
+        app:mToolBar_showRight="true"
+        app:mToolBar_title="@string/financial_detail"
+        app:mToolBar_titleColor="@color/activity_text_color" />
+
+    <View
+        android:background="@color/titlelineColor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend
+            android:id="@+id/scrollViews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.fhzc.app.android.android.ui.view.widget.NoScrollListView
+                android:id="@+id/financialListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/transparence"
+                android:dividerHeight="@dimen/line_size" />
+        </com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

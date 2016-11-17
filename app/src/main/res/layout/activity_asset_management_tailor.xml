@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<com.fhzc.app.android.android.ui.view.widget.CommonToolBar-->
+        <!--android:id="@+id/Toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--app:mToolBar_title="资产管理"-->
+        <!--app:mToolBar_titleColor="@color/activity_text_color" />-->
+    <com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend
+        android:id="@+id/ScrollViewExtendlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/asset_management_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:id="@+id/backimages"
+                    android:background="@drawable/activity_backss_view"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/twentyDp"
+                    android:layout_marginTop="@dimen/twentyDp"
+                    android:layout_width="@dimen/thirtyonedp"
+                    android:layout_height="@dimen/thirtyonedp">
+                    <ImageView
+
+                        android:background="@drawable/back_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/threeDp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <ImageView
+                        android:id="@+id/asset_list"
+                        android:background="@drawable/asset_list"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_marginRight="@dimen/threeDp"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/asset_tictacs"
+                        android:background="@drawable/asset_tictacs"
+                        android:layout_marginLeft="@dimen/threeDp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            <RelativeLayout
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_marginLeft="@dimen/tenDp"
+                android:layout_marginBottom="55dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/personal_text_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/personal_title_text"
+                    android:layout_marginTop="@dimen/twentyDp"
+                    android:background="@drawable/asset_management_introduce"
+                    android:layout_width="80dp"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:paddingTop="@dimen/thirtyonedp"
+                    android:paddingBottom="@dimen/thirtyonedp"
+                    android:id="@+id/personalTailorText"
+                    android:textColor="#425262"
+                    android:textSize="15sp"
+                    android:lineSpacingExtra="13dp"
+                    android:text="我们致力于为您提供立足于国内、放眼全球的资产配置管理方案，通过与国际化的高品质专业机构合作，研发多样化的投资产品，同坐对更广泛的资产类别的组合管理帮您实现投资收益的稳健增长。同时，我们始终秉承“专业、专属、专享”的服务理念，在个性化投资、私人信托及财富传承。子女教育以及移民规划等方面，为您提供量身定制化的解决方案和专属产品。"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:layout_below="@id/personal_title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend>
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/Toolbar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/imageLayout"
+            android:layout_marginLeft="@dimen/twentyDp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="资产管理"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</RelativeLayout>

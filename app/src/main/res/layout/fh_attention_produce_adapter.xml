@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/thirteenDp"
+    android:layout_marginRight="@dimen/thirteenDp"
+    android:weightSum="4"
+    android:layout_marginTop="@dimen/sixteenDp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="@dimen/thirteenDp"
+        android:id="@+id/titleNameText"
+        android:textColor="@color/textpassColor"
+        android:textSize="@dimen/fiveteensp"
+        android:text="复华奥瑞澳洲机会基金"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/interestNumberLayout"
+            android:layout_marginTop="@dimen/twentyDp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/interestNumber"
+                android:textColor="@color/produceAdapterColor"
+                android:textSize="@dimen/textSixteenDp"
+                android:text=">8.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/producetextColor"
+                android:layout_below="@id/interestNumber"
+                android:text="预期年利率(%)"
+                android:layout_marginTop="@dimen/tenDp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/twentyDp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/bottom_menu_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/timeText"
+                android:textColor="@color/textpassColor"
+                android:textSize="@dimen/fiveteensp"
+                android:text="存续期限   16个月"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/startPriceText"
+                android:textColor="@color/producetextColor"
+                android:layout_below="@id/timeText"
+                android:text="起购金额   100万"
+                android:layout_marginTop="@dimen/sixteenDp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:background="@drawable/produce_adapter_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="80"
+        android:layout_marginTop="@dimen/elevenDps"
+        android:id="@+id/interestProgress"
+        android:progressDrawable="@drawable/produce_adapter_progress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/twoDp" />
+
+    <TextView
+        android:id="@+id/endTimeText"
+        android:layout_marginBottom="@dimen/seventeenSp"
+        android:layout_marginTop="@dimen/threeDp"
+        android:layout_gravity="right"
+        android:text="预计还有60天结束"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

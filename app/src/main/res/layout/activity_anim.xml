@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/animBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadinganim_logoreclayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loadinganim_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_slogan"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loadinganim_slogan" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sloganenglish"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_slogan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loadinganim_sloganenglish" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/loadinganim_logoreclayout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:alpha="0">
+
+        <ImageView
+            android:id="@+id/loadinganim_logorec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/loadinganim_logorec" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/loadinganim_logoballlayout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:alpha="0">
+
+        <ImageView
+            android:id="@+id/loadinganim_logoball"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"
+            android:src="@drawable/loadinganim_logoball" />
+
+    </FrameLayout>
+
+</RelativeLayout>

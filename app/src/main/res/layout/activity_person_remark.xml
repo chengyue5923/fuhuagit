@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/selected_line_color"
+    android:layout_height="match_parent">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:layout_alignParentTop="true"
+        android:id="@+id/personDetailremarkToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mToolBar_background="@color/transparence"
+        app:mToolBar_showRight="true"
+        app:mToolBar_title="@string/remark_person"
+        app:mToolBar_titleColor="@color/activity_text_color" />
+
+    <TextView
+        android:text="备注信息"
+        android:layout_marginLeft="@dimen/sixteenDp"
+        android:textColor="@color/textpassColor"
+        android:textSize="@dimen/foureenSp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourtyfourDp" />
+
+    <EditText
+        android:id="@+id/remarkText"
+        android:gravity="top"
+        android:paddingBottom="@dimen/twentyDp"
+        android:paddingRight="@dimen/sixteenDp"
+        android:paddingTop="@dimen/twentyDp"
+        android:paddingLeft="@dimen/sixteenDp"
+        android:textColorHint="@color/texthintColor"
+        android:hint="在此处填写客户的备注信息"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/twohundeidhtDp" />
+
+
+
+</LinearLayout>

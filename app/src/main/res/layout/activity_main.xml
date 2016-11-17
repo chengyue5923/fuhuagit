@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparence">
+
+        <FrameLayout
+            android:id="@+id/realtabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="45dp">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#b3b3b3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:orientation="horizontal"
+                android:background="#f9f9f9"
+                >
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_featured"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="精选"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_service"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="服务"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_mine"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="我的"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/main_tab_layout"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@drawable/tab_backgroud">-->
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_weight="1">-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/main_tab_selected_layout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tab_menu_selected_text_CN"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:text="@string/bottom_menu_selected"-->
+        <!--android:textColor="@drawable/tab_selector_text"-->
+        <!--android:textSize="@dimen/bottom_menu_text_size" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tab_menu_selected_EN"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/tab_menu_selected_text_CN"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_gravity="center_horizontal"-->
+
+        <!--android:text="@string/bottom_menu_selected_EN"-->
+        <!--android:textColor="@drawable/tab_selector_text"-->
+        <!--android:textSize="@dimen/bottom_menu_text_size" />-->
+
+
+        <!--</RelativeLayout>-->
+
+        <!--</FrameLayout>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/tab_menu_service_iv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/tab_selector_supply" />-->
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_weight="1">-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/main_tab_wealth_layout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:gravity="center"-->
+
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tab_menu_wealth_text_CN"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:text="@string/bottom_menu_wealth"-->
+        <!--android:textColor="@drawable/tab_selector_text"-->
+        <!--android:textSize="@dimen/bottom_menu_text_size" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tab_menu_wealth_text_EN"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:text="@string/bottom_menu_wealth_EN"-->
+        <!--android:textColor="@drawable/tab_selector_text"-->
+        <!--android:textSize="@dimen/bottom_menu_text_size" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--</FrameLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/ll_transition"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@drawable/loadinganim_bg"-->
+        <!--android:orientation="vertical"-->
+        <!--&gt;-->
+
+        <!--</LinearLayout>-->
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+    android:background="@drawable/common_selector_bg"
+    android:layout_width="match_parent"
+    android:id="@+id/headOfficeLayout"
+    android:layout_height="@dimen/fourtyoneDp">
+    <TextView
+        android:id="@+id/phontcontactTv"
+    android:text="总公司电话"
+    android:layout_marginLeft="@dimen/foureenDp"
+    android:layout_centerVertical="true"
+    android:textColor="@color/common_title_text"
+    android:textSize="@dimen/fiveteensp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/numbercontactus"
+    android:text="1235847517"
+    android:layout_marginRight="@dimen/fiveteenDp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:textColor="@color/common_title_text"
+    android:textSize="@dimen/fiveteensp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

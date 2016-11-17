@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:layout_alignParentTop="true"
+        android:id="@+id/reportDetailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mToolBar_background="@color/transparence"
+        app:mToolBar_rightImage="@drawable/collect_n"
+        app:mToolBar_showRight="true"
+        app:mToolBar_title="@string/report_detail"
+        app:mToolBar_titleColor="@color/activity_text_color" />
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:orientation="vertical"
+
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_fourDp">
+
+        <View
+            android:background="@color/bottomlineColor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"/>
+
+        <TextView
+            android:id="@+id/signUpTextView"
+            android:textSize="@dimen/foureenSp"
+            android:textColor="@color/white"
+            android:background="@drawable/activity_detail_button_bg"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/share_for_customer"
+            android:layout_width="@dimen/onehundtwentyfiveDp"
+            android:layout_height="@dimen/fourtyfourDp" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/ScrollViewLayoutsd"
+        android:layout_below="@id/reportDetailToolbar"
+        android:layout_above="@id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--<WebView-->
+                <!--android:id="@+id/reportwebview"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--/>-->
+            <com.fhzc.app.android.android.ui.view.widget.DJXWebView
+                android:id="@+id/reportwebview"
+                android:layout_above="@id/bottomLayout"
+                android:layout_below="@id/reportDetailToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.fhzc.app.android.android.ui.view.widget.DJXWebView>
+            <ProgressBar
+                android:visibility="visible"
+                android:id="@+id/webDetailLoading"
+                android:layout_below="@id/reportDetailToolbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:max="100"
+                android:progressDrawable="@drawable/web_load_progress_background"
+                android:secondaryProgress="0" />
+            <LinearLayout
+                android:layout_above="@id/bottomLayout"
+                android:id="@+id/textiamgeLayout"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_below="@id/reportDetailToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/prdinaryLayout"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:background="@color/titlelineColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_size"></View>
+                    <TextView
+                        android:layout_marginTop="@dimen/twentyfivedp"
+                        android:layout_marginLeft="@dimen/twelvetyDp"
+                        android:layout_marginRight="@dimen/twelvetyDp"
+                        android:id="@+id/reportTextView"
+                        android:textColor="@color/titleTextColor"
+                        android:textSize="@dimen/twentythreesp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <!--<TextView-->
+                    <!--android:layout_marginLeft="@dimen/twelvetyDp"-->
+                    <!--android:id="@+id/repostTimeText"-->
+                    <!--android:layout_marginTop="@dimen/twentyfivedp"-->
+                    <!--android:textSize="@dimen/ninesp"-->
+                    <!--android:text="2016.7.12"-->
+                    <!--android:textColor="@color/contentTextColor"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerInside"
+                        android:layout_marginTop="@dimen/fiveteenDp"
+                        android:id="@+id/reportImageView"
+                        android:layout_width="@dimen/twohundfiftysixDp"
+                        android:layout_height="@dimen/onehundeightyDp" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/threetyDp"
+                        android:layout_marginLeft="@dimen/sixteenDp"
+                        android:layout_marginRight="@dimen/sixteenDp"
+                        android:textSize="@dimen/foureenSp"
+                        android:textColor="@color/titleTextColor"
+                        android:id="@+id/reportContextText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView
+                    android:layout_above="@+id/bottomLayout"
+                    android:visibility="gone"
+                    android:id="@+id/showimage"
+                    android:layout_marginRight="@dimen/fiveteenDp"
+                    android:layout_marginLeft="@dimen/fiveteenDp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

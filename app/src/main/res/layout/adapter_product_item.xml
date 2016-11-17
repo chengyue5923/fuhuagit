@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--往期产品-->
+    <LinearLayout
+        android:id="@+id/ll_dividelayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="134dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:background="#98979d" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="往期产品"
+            android:textColor="#98979d"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="134dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            android:background="#98979d" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <!--角标-->
+        <ImageView
+            android:id="@+id/productStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/twelvetyDp"
+            android:paddingTop="@dimen/twelvetyDp">
+
+            <TextView
+                android:id="@+id/titleNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60dp"
+                android:text=""
+                android:textColor="@color/history_product_main_text"
+                android:textSize="@dimen/sixteenSp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/interestNumberLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingRight="42dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/interestNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text=""
+                            android:textColor="@color/produceAdapterColor"
+                            android:textSize="26sp" />
+
+                        <TextView
+                            android:id="@+id/yearExpect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/interestNumber"
+                            android:layout_gravity="center_horizontal"
+                            android:text="参考业绩标准"
+                            android:textColor="@color/history_product_deputy_text"
+                            android:textSize="@dimen/twelvetySp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@id/interestNumber"
+                            android:paddingTop="10dp"
+                            android:text="投资期限     "
+                            android:textColor="@color/history_product_main_text"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/timeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text=""
+                            android:textColor="@color/history_product_deputy_text"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:text="分配方式     "
+                            android:textColor="@color/history_product_main_text"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/distributionMode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/history_product_deputy_text"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/interestProgress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/twoDp"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginRight="@dimen/fourteenDp"
+                    android:layout_weight="1"
+                    android:background="@drawable/produce_adapter_progress"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/produce_adapter_progress" />
+
+                <TextView
+                    android:id="@+id/endTimeText"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/fourteenDp"
+                    android:layout_marginTop="@dimen/sixDp"
+                    android:text=""
+                    android:textColor="@color/history_product_deputy_text"
+                    android:textSize="@dimen/twelvetySp" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/fourteenDp"
+                android:layout_marginRight="@dimen/fourteenDp"
+                android:layout_marginTop="@dimen/seventeenSp"
+                android:background="@color/linecolor" />
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/productCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:button="@drawable/collect_checkbox_selector"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

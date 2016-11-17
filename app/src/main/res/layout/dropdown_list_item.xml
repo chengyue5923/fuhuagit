@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/dropdown_list_selector"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:text="dddd"
+        android:id="@+id/tv"
+        android:paddingLeft="@dimen/tenDp"
+        android:textColor="@color/contact_name_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourtynineDp"
+        android:gravity="center_vertical"/>
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_dividelayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#efeef4"
+        android:visibility="gone"
+        >
+        <View
+            android:layout_width="134dp"
+            android:layout_height="1dp"
+            android:background="#98979d"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#98979d"
+            android:textSize="15sp"
+            android:text="往期活动"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="134dp"
+            android:layout_height="1dp"
+            android:background="#98979d"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/activity_item_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_error_long" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/activity_item_status"
+            android:layout_width="@dimen/fifityDp"
+            android:layout_height="@dimen/fifityDp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+
+
+        <CheckBox
+            android:id="@+id/activityCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:button="@drawable/collect_checkbox_selector"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="5dp"
+        android:paddingRight="12dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/knock" />
+
+        <TextView
+            android:drawableLeft="@drawable/activity_no_time_view"
+            android:id="@+id/activity_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:drawablePadding="@dimen/fiveDp"
+            android:textColor="@color/selected_main_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="5dp"
+        android:paddingRight="12dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/knock" />
+
+        <TextView
+            android:drawableLeft="@drawable/activity_address_view"
+            android:drawablePadding="@dimen/fiveDp"
+            android:id="@+id/activity_item_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="@color/selected_main_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

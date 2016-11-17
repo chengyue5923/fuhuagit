@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:background="@drawable/common_selector_bg"
+        android:paddingLeft="13dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/clientAvatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:src="@drawable/im_default_user_portrait_corner" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/clientAvatar"
+                android:paddingLeft="11dp"
+                android:text="李洁洁"
+                android:id="@+id/clientName"
+                android:textColor="#46464b"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/clientMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="10dp"
+            android:text="2000万"
+            android:textColor="#46464b"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/clientLevel"
+
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/clientlist_silvervip"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginBottom="@dimen/twentyDp"
+        android:id="@+id/textLayout"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/twentyDp"
+        android:layout_marginLeft="58dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="@dimen/fourDp"
+            android:background="@drawable/activity_planner_mome"
+            android:layout_width="@dimen/eightDp"
+            android:layout_height="@dimen/eightDp" />
+        <TextView
+            android:layout_marginLeft="@dimen/tenDp"
+            android:id="@+id/Customertext"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

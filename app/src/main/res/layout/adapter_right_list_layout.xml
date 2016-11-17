@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_selector_bg"
+        android:paddingBottom="@dimen/tenDp"
+        android:paddingTop="18dp">
+
+        <ImageView
+            android:id="@+id/right_item_image"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_error" />
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/rightCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="15dp"-->
+
+            <!--android:button="@drawable/collect_checkbox_selector"-->
+            <!--android:visibility="visible" />-->
+
+        <RelativeLayout
+            android:layout_marginRight="@dimen/tenDp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/right_item_image"
+            android:orientation="vertical"
+            android:paddingLeft="21dp">
+
+            <TextView
+                android:id="@+id/right_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="[基金经理特点] 专注个股选择遵循相对价值"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/right_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/right_item_title"
+                android:layout_marginTop="@dimen/ninedp"
+                android:ellipsize="end"
+                android:text="1000"
+                android:textColor="@color/produceAdapterColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/right_item_content"
+                android:layout_marginBottom="@dimen/twoDp"
+                android:layout_marginLeft="@dimen/fiveDp"
+                android:layout_toRightOf="@id/right_item_content"
+                android:text="积分"
+                android:textSize="@dimen/tenSp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/timeTextViews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/right_item_content"
+                android:layout_marginTop="@dimen/fiveDp"
+                android:background="@drawable/adapter_right_time_bg"
+                android:textColor="@color/yuyuetextColor"
+                android:textSize="@dimen/thirteenSp" />
+
+            <TextView
+                android:id="@+id/levelTextViews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/right_item_content"
+                android:layout_marginTop="@dimen/fiveDp"
+                android:layout_toRightOf="@id/timeTextViews"
+                android:textColor="@color/silverColor"
+                android:textSize="@dimen/thirteenSp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rootLayoutsssss"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/default_pictures"
+            android:id="@+id/right_item_image_new"
+            android:layout_width="match_parent"
+            android:layout_height="140dp" />
+
+        <ImageView
+            android:background="@drawable/black_leavel"
+            android:id="@+id/dradleImage"
+            android:layout_width="85dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/right_item_image_new"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:id="@+id/leaval_text"
+            android:text=""
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/twentyDp"
+            android:layout_toLeftOf="@id/leaval_text"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/right_item_image_new"
+            android:id="@+id/right_item_title_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="[基金经理特点] 专注个股选择遵循相对价值"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/bottomline"
+            android:layout_below="@id/right_item_title_new"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"
+            android:background="@color/linecolor"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/bottomline"
+            android:id="@+id/times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ninedp"
+            android:ellipsize="end"
+            android:text="/次"
+            android:textColor="#999999"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/times"
+            android:layout_below="@id/bottomline"
+            android:id="@+id/right_item_content_new_statues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/elevenDp"
+            android:ellipsize="end"
+            android:text=""
+            android:visibility="gone"
+            android:drawablePadding="@dimen/fiveDp"
+            android:drawableLeft="@drawable/activity_no_time_view"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_toLeftOf="@id/times"
+            android:layout_below="@id/bottomline"
+            android:id="@+id/right_item_content_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ninedp"
+            android:layout_marginBottom="@dimen/ninedp"
+            android:ellipsize="end"
+            android:text="1000积分"
+            android:textColor="@color/produceAdapterColor"
+            android:textSize="20sp" />
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/rightCheckBox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/collect_checkbox_selector"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

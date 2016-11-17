@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nintyfiveDp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/leftLayout"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ranglist"
+            android:layout_centerVertical="true"
+            android:background="@drawable/firstback"
+            android:layout_width="40dp"
+            android:layout_marginLeft="@dimen/seventeenDp"
+            android:layout_height="40dp" />
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/rankid"
+            android:textSize="@dimen/thirtyfivedp"
+            android:text="4"
+            android:gravity="right"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/seventeenDp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <com.fhzc.app.android.android.ui.view.widget.CircleImageView
+        android:id="@+id/personinfoimages"
+        android:layout_toRightOf="@+id/leftLayout"
+        android:layout_width="70dp"
+        android:background="@drawable/selected_peroninfo"
+        android:layout_marginLeft="@dimen/twentyDp"
+        android:layout_centerVertical="true"
+        android:layout_height="70dp"/>
+    <TextView
+        android:layout_marginLeft="@dimen/tenDp"
+        android:layout_toRightOf="@id/personinfoimages"
+        android:id="@+id/nameText"
+        android:textSize="@dimen/eighteenDp"
+        android:text="---"
+        android:layout_centerVertical="true"
+        android:textColor="@color/selected_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/yeji"
+        android:textSize="@dimen/eighteenDp"
+        android:text="---"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/twelvetyDp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/selected_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

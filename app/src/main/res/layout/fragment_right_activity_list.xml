@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_back_ground"
+    android:orientation="vertical"
+    >
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend
+            android:id="@+id/ScrollViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/rightActivityImage"
+                    android:background="@drawable/right_activity_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rootLayout"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/item_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

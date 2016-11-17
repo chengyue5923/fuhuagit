@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:paddingTop="11dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/white"
+
+            >
+
+            <ImageView
+                android:layout_marginLeft="@dimen/tenDp"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_marginTop="@dimen/tenDp"
+                android:id="@+id/activity_item_image"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_error_long" />
+
+            <ImageView
+                android:id="@+id/activity_item_status"
+                android:layout_width="@dimen/fifityDp"
+                android:layout_height="@dimen/fifityDp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:id="@+id/timeTextView"
+                android:text=""
+                android:drawablePadding="@dimen/fiveDp"
+                android:layout_marginTop="@dimen/fiveteenDp"
+                android:layout_marginLeft="@dimen/tenDp"
+                android:layout_below="@id/activity_item_image"
+                android:drawableLeft="@drawable/activity_no_time_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/addressTextView"
+                android:text=""
+                android:drawablePadding="@dimen/fiveDp"
+                android:layout_marginTop="@dimen/fiveteenDp"
+                android:layout_marginLeft="@dimen/tenDp"
+                android:layout_below="@id/timeTextView"
+                android:drawableLeft="@drawable/activity_address_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#cc000000"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/knock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/activity_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:common="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:paddingTop="@dimen/twentyDp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/planner_back_view"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/messageLayout"
+        android:layout_width="30dp"
+        android:layout_marginRight="@dimen/elevenDp"
+        android:layout_marginTop="@dimen/tenDp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/messageIv"
+            android:layout_width="@dimen/twentyfivedp"
+            android:layout_height="@dimen/twentyfivedp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@drawable/selected_message" />
+
+        <TextView
+            android:id="@+id/messageRedImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ff801a"
+            android:textSize="0sp"
+            android:background="@drawable/shape_message_circle_reddot"
+            android:visibility="visible"
+            android:layout_marginTop="5dp"
+            />
+
+    </RelativeLayout>
+    <com.fhzc.app.android.android.ui.view.widget.CircleImageView
+        android:id="@+id/personInfoIv"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/elevenDp"
+        android:layout_marginLeft="@dimen/elevenDp"
+        android:layout_width="@dimen/thirtyfivedp"
+        android:layout_height="@dimen/thirtyfivedp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/selected_peroninfo" />
+    <LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_marginTop="@dimen/tenDp"
+        android:layout_below="@id/messageLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="@dimen/twentytwoDp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/vipPlannerView"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/vip_planner_view"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp" />
+            <com.fhzc.app.android.android.ui.view.widget.CircleImageView
+                android:id="@+id/person_info_avatar"
+                android:layout_marginTop="-1dp"
+                android:layout_below="@id/vipPlannerView"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/selected_peroninfo"
+                common:border_color="@color/white"
+                common:border_width="1dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/twoDp"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/plannerNameText"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="理财师"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/plannerLine"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="9dp"
+                android:layout_below="@id/plannerNameText"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="@dimen/line_size"/>
+
+            <TextView
+                android:id="@+id/plannerPosition"
+                android:layout_marginTop="9dp"
+                android:layout_below="@id/plannerLine"
+                android:textColor="@color/white"
+                android:text="职位"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15sp"
+                android:id="@+id/plannerCompany"
+                android:layout_marginTop="9dp"
+                android:layout_below="@id/plannerPosition"
+                android:textColor="@color/white"
+                android:text="所属部门"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/achevementText"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_below="@id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="132dp">
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/achievementText"
+                android:text="业绩"
+                android:textColor="#a6a5ab"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/acievementText"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/achievementText"
+                android:text="暂无业绩"
+                android:layout_marginTop="17dp"
+                android:textSize="27sp"
+                android:textColor="#fe801a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/arrangeText"
+                android:text="排名"
+                android:textColor="#a6a5ab"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/arrangePlannerText"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/arrangeText"
+                android:text="暂无排名"
+                android:layout_marginTop="17dp"
+                android:textSize="27sp"
+                android:textColor="#257bf2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical"
+        android:layout_below="@id/achevementText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/linecolor"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <RelativeLayout
+            android:id="@+id/myWorkLayout"
+            android:background="@drawable/common_selector_bg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/myWorkerText"
+                android:layout_centerVertical="true"
+                android:background="@drawable/person_planner_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toRightOf="@id/myWorkerText"
+                android:layout_centerVertical="true"
+                android:text="我的客户"
+                android:textColor="#47464c"
+                android:textSize="15sp"
+                android:layout_marginLeft="@dimen/tenDp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#c9c8ce"
+                android:textSize="13sp"
+                android:text="客户资料 资产 预约查看"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/linecolor"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <RelativeLayout
+            android:id="@+id/MyCollectLayout"
+            android:background="@drawable/common_selector_bg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/myCollectText"
+                android:layout_centerVertical="true"
+                android:background="@drawable/college_planner_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toRightOf="@id/myCollectText"
+                android:layout_centerVertical="true"
+                android:text="我的收藏"
+                android:textColor="#47464c"
+                android:textSize="15sp"
+                android:layout_marginLeft="@dimen/tenDp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#c9c8ce"
+                android:textSize="13sp"
+                android:text="您收藏的产品有更新"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <View
+            android:background="@color/linecolor"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

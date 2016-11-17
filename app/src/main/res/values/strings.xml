@@ -1,0 +1,229 @@
+<resources>
+    <string name="app_name">复华资产</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="string_blank"></string>
+    <string name="ht_dialog_cancel">取消</string>
+    <string name="ht_lookUpPicture">查看图片</string>
+    <string name="ht_comments_produce_Picture">请选择</string>
+    <string name="ht_comments_produce_take_photo">拍照</string>
+    <string name="ht_comments_produce_album">手机相册</string>
+    <string name="ht_takePhoto">拍照</string>
+    <string name="ht_album">相册</string>
+    <string name="ht_save">保存</string>
+    <string name="login_phone_null">手机号码不能为空</string>
+    <string name="login_code_null">证件号码不能为空</string>
+    <string name="bind_code_null">验证码不能为空</string>
+    <string name="loginaccount">账     号</string>
+    <string name="accountnumber">输入您的手机号码或登录名</string>
+    <string name="loginpassword">密码</string>
+    <string name="accountpass">输入您的密码</string>
+    <string name="Forgetpass">忘记密码</string>
+    <string name="login">登录</string>
+    <string name="phonepass">还没有密码？手机验证登录</string>
+    <string name="servicephone">客服电话：</string>
+    <string name="phonenumber">40012341234</string>
+    <string name="logintitleText">全球视角 全球配置</string>
+    <string name="logincontentText">Global Pespective    Global Allocation</string>
+
+    <string name="credentialstype">证件类型</string>
+
+    <string name="credentialsperson">身份证</string>
+    <string name="credentialshongkong">港澳台通行证</string>
+    <string name="credentialshome">回乡证</string>
+    <string name="credentialsoffice">军官证</string>
+
+    <string name="credentialnumber">证件号码</string>
+    <string name="credentialshint">请输入您预留的身份证号</string>
+    <string name="phone">手机号码</string>
+    <string name="phonehint">请输入您预留的手机号</string>
+    <string name="identify">验  证  码</string>
+    <string name="identifyhint">请输入六位数验证码</string>
+    <string name="identifyagain">重新发送</string>
+    <string name="getidentifyagain">获取验证码</string>
+    <string name="tologin">已有密码？直接登录</string>
+    <string name="nologin">不能登录?拨打客服电话：40012341234</string>
+
+    <!--MainTabActivity-->
+    <string name="bottom_menu_selected">精选</string>
+    <string name="bottom_menu_selected_EN">Gifts</string>
+    <string name="bottom_menu_service">私行服务</string>
+    <string name="bottom_menu_wealth">我的</string>
+    <string name="bottom_menu_wealth_EN">My</string>
+    <!--ChatActivity-->
+    <string name="im_capture_photo">拍摄照片</string>
+    <string name="im_select_photo">选择图片</string>
+    <string name="send_message">发表</string>
+    <string name="send_conversation_textmessage">发送</string>
+    <string name="hold_to_talk">按住说话</string>
+    <string name="media_recording">录制中</string>
+    <string name="hold_to_film">按住拍摄</string>
+    <string name="tip_for_voice_forward">按住 说话</string>
+    <string name="release_to_send_voice">松开 结束</string>
+    <string name="take_photo_btn_text">照片</string>
+    <string name="take_camera_btn_text">拍照</string>
+    <string name="message_null">不能发送空内容哦！</string>
+    <string name="message_image_desc">Message Image</string>
+    <string name="sdcard_unavaluable">请检查存储卡是否可用</string>
+    <!--SelectedFragment-->
+    <string name="service">私行服务</string>
+    <string name="activity">精彩活动</string>
+    <string name="attention">我的关注</string>
+    <string name="product">专属产品</string>
+    <string name="selected_product">精选基金</string>
+    <string name="selected_top_text1">开启私行服务</string>
+    <string name="selected_top_text2">让 每 一 天 都 丰 富 多 彩</string>
+    <string name="selected_top_text3">Perfect for the day to day</string>
+    <!--reportListActivity-->
+    <string name="report_list">投研报告</string>
+    <!--ActivityListActivity-->
+    <string name="activity_list">精彩活动</string>
+    <string name="activity_hotnews">新闻热点</string>
+    <!--ActivityListActivity-->
+    <string name="activity_person_info">个人中心</string>
+    <!--SystemMessageActivity-->
+    <string name="activity_system_message">服务公告</string>
+    <string name="activity_account_message">到账消息</string>
+    <string name="activity_year">历年排行</string>
+    <string name="activity_month">历月排行</string>
+    <string name="activity_search">业绩查询</string>
+    <!--ChatListActivity-->
+    <string name="activity_chat_lit">消息</string>
+    <!--CustomerMineFragment-->
+    <string name="activity_my">我的</string>
+    <!--SetPassword-->
+    <string name="set_password">设置密码</string>
+    <!--fhSihangFuWuReportDetailActivity-->
+    <string name="report_detail">报告详情</string>
+    <string name="right_detail">权益详情</string>
+    <string name="history">历史投资</string>
+    <string name="producttext">我预约的产品</string>
+    <string name="account">我的理财师</string>
+    <string name="financial_detail">专属理财</string>
+    <string name="right_list_detail">健康管理</string>
+    <string name="member_detail">会员权益</string>
+    <string name="produce_detail">产品详情</string>
+    <string name="activity_detail">活动详情</string>
+    <string name="right_detail_change">兑换权益</string>
+    <string name="signedup_activity_detail">报名活动</string>
+    <string name="share_for_customer">分享给客户</string>
+    <string name="activity_time_detail">活动时间 :</string>
+    <string name="signedup_time_detail">报名时间 :</string>
+    <string name="activity_where_detail">活动地点 :</string>
+    <string name="activity_signup_forsome">为其他客户报名</string>
+    <string name="sure_signedup_detail">确认报名？</string>
+    <string name="sure_signedup_forothers_detail">为他人报名</string>
+    <string name="signedup_forother_detail">确认预约？</string>
+    <string name="signedup_name_detail">预约客户姓名</string>
+    <string name="signedup_phone_detail">预约客户手机号码</string>
+    <string name="signedup_identify_detail">验证码</string>
+    <string name="get_identify_detail">获取验证码</string>
+    <string name="sure_signedup_forother_detail">确认预约</string>
+    <string name="cancel_signedup_detail">取消报名</string>
+    <string name="cancel_reservation_detail">预约成功</string>
+    <string name="cancela_reservation_detail">取消预约</string>
+    <string name="cancel_not_signedup_detail">暂不取消</string>
+    <string name="cancel_signe_text_detail">若您取消后希望再次报名，再次点击"报名活动"即可</string>
+    <string name="reservation_success_produce">您的专属师将尽快与您联系，为您完成产品认购手续。</string>
+    <string name="cancel_content">若您取消后希望再次预约，再次点击“预约产品”即可。</string>
+
+    <string name="sure">确定</string>
+    <string name="signedup_detail">确认报名</string>
+    <string name="expectte_return">预期收益</string>
+    <string name="investment_amount">起投金额</string>
+    <string name="investment_time">投资期限</string>
+    <string name="essential_information">基本信息</string>
+    <string name="produce_details">产品详情</string>
+
+    <string name="start_time">成立日</string>
+    <string name="end_time">到期日</string>
+    <string name="sell_model">发行模式</string>
+    <string name="produce_type">产品类型</string>
+    <string name="produce_on_date">产品存续期限</string>
+    <string name="divider_date">派息日期</string>
+    <string name="repuest_year_return">预期年化收益率</string>
+    <string name="return_type">收益分配方式</string>
+    <string name="investment_goal">投资方向</string>
+    <string name="investment_manager_cost">基金管理费</string>
+    <string name="investment_buy">基金认购费</string>
+    <string name="investment_manager">基金管理人</string>
+    <string name="investment_entrust">基金托管人</string>
+    <string name="beian">备案与否</string>
+    <string name="investment_state">基金状态</string>
+    <string name="control">增信措施</string>
+    <string name="produce_advantage">产品亮点</string>
+    <string name="expectte_produce">预约产品</string>
+    <string name="expectte_information">预约信息</string>
+    <string name="expectte_count">预约金额(单位：万元)</string>
+    <string name="choose_supplier">选择供应商</string>
+    <string name="choose_package">选择套餐</string>
+    <string name="choose_integral">所需积分</string>
+    <string name="cancle">取消</string>
+
+    <string name="choose">选择</string>
+    <string name="degrees">会员等级要求</string>
+    <string name="interal">所需积分</string>
+    <string name="packages">套餐</string>
+
+    <string name="my_collection">我的关注</string>
+    <string name="my_password">设置密码</string>
+    <string name="collection_produce">理财产品</string>
+    <string name="collection_report">投研报告</string>
+    <string name="collection_list">活动列表</string>
+    <string name="collection_rights">权益列表</string>
+
+    <string name="activity_show">活动简介:</string>
+
+    <string name="setting_pass">6-20个密码，可由数字、字母、符号组成</string>
+    <string name="sure_password">确认密码</string>
+    <string name="sure_password_again">再次输入密码</string>
+
+    <string name="forget_password_again">忘记密码</string>
+    <string name="chenge_password_again">修改密码</string>
+    <string name="forget_person">个人信息</string>
+    <string name="remark_person">备注</string>
+    <string name="change_login_name_person">修改登录名</string>
+    <string name="phone_password_again">手机号码</string>
+    <string name="input_phone_password">请输入您注册的手机号</string>
+    <string name="identify_password">验  证  码</string>
+    <string name="input_indentify_password">请输入六位数验证码</string>
+    <string name="sent_identify_password">发送验证码</string>
+    <string name="next_password">下一步</string>
+
+    <string name="new_password">新    密    码</string>
+    <string name="new_hint_password">6-20个字符，可由数字、字母、符号组成</string>
+    <string name="sure_again_password">确认密码</string>
+    <string name="inout_next_password">再次输入密码</string>
+    <string name="finish_password">重置密码</string>
+
+    <string name="cancel_not_password">暂不取消</string>
+    <string name="cancal_now_password">取消预约</string>
+
+
+    <string name="healthtext">健康管理</string>
+    <string name="tourismtext">旅游管家</string>
+    <string name="arttext">艺术管家</string>
+    <string name="bustourism">商旅通</string>
+    <string name="livetext">奢生活</string>
+    <string name="sporttext">爱体育</string>
+    <string name="buscollegetext">商学院</string>
+    <string name="cubtext">俱乐部</string>
+
+    <string name="choosetext">精选权益</string>
+    <string name="feelchoosetext">感受至尊体验</string>
+
+
+    <string name="notfound_audio_file">该语音文件已丢失</string>
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="system_memory_warning">系统内存不够, 请稍后重试</string>
+</resources>

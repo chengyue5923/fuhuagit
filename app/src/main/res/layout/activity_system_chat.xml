@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:id="@+id/systemChatToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mToolBar_title="复华小助手" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+        <ListView
+            android:visibility="gone"
+            android:id="@+id/message_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#EBEBEB"
+            android:layout_weight="1"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@color/transparent"
+            android:paddingBottom="1dp"
+            android:scrollbars="none"
+            android:transcriptMode="normal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iclauncher"
+                android:layout_marginLeft="@dimen/tenDp"
+                android:background="@mipmap/ic_launcher"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:background="@drawable/activity_number_detail_edittext"
+                android:layout_toRightOf="@id/iclauncher"
+                android:layout_marginLeft="@dimen/tenDp"
+                android:layout_marginRight="@dimen/twentyDp"
+                android:text="欢迎加入复华！如果您在使用中遇到问题或者对产品有建议，请戳下面“意见反馈”反馈给我们，祝您生活愉快！"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <!--<TextView-->
+            <!--android:id="@+id/time_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="11dp"-->
+            <!--android:background="@drawable/tt_message_title_time_bg"-->
+            <!--android:paddingBottom="5dp"-->
+            <!--android:paddingLeft="29dp"-->
+            <!--android:paddingRight="29dp"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:text="星期日 11:11"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="12sp"></TextView>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingTop="11dp">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/user_portrait"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/chat_avatar_system" />-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/content_layout"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignTop="@id/user_portrait"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="60dp"-->
+                <!--android:layout_toRightOf="@id/user_portrait"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/name"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="2dp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:text="小明"-->
+                    <!--android:textSize="11sp"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="0dp"-->
+                    <!--android:layout_toRightOf="@id/user_portrait"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/message_content"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/tt_other_item_bg_normal"-->
+                        <!--android:gravity="left"-->
+                        <!--android:paddingBottom="10dp"-->
+                        <!--android:paddingLeft="18dp"-->
+                        <!--android:paddingRight="7dp"-->
+                        <!--android:paddingTop="8dp"-->
+                        <!--android:text="欢迎加入复华！如果您在使用中遇到问题或者对产品有建议，请戳下面“意见反馈”反馈给我们，祝您生活愉快！"-->
+                        <!--android:textColor="#101010"-->
+                        <!--android:textColorLink="@android:color/black"-->
+                        <!--android:textSize="16sp" />-->
+
+
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="#F4F4F6">
+
+            <LinearLayout
+                android:id="@+id/contactUstext"
+                android:layout_width="wrap_content"
+                android:background="@drawable/common_selector_bg"
+                android:layout_height="match_parent"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/system_chat_call" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#D6D6D8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/feedbackLayout"
+                android:background="@drawable/common_selector_bg"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/system_chat_feedback" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="9dp"
+                        android:text="意见反馈"
+                        android:textColor="#565656"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

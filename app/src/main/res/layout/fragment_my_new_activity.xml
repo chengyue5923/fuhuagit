@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+   >
+   <TextView
+       android:layout_gravity="center"
+       android:textColor="@color/black"
+       android:text="retytttttttttttttttttttttttttrwrt"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+   <com.fhzc.app.android.android.ui.view.widget.NoScrollListView
+       android:id="@+id/myActivityList"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/white"
+       android:divider="@color/linecolor"
+       android:dividerHeight="1px"
+       android:focusable="false"
+       android:listSelector="@drawable/common_selector_bg"
+       android:scrollbars="none"/>
+
+</LinearLayout>

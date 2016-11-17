@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:layout_alignParentTop="true"
+        android:id="@+id/rightDetailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mToolBar_background="@color/transparence"
+        app:mToolBar_rightImage="@drawable/title_message"
+        app:mToolBar_showRight="true"
+        app:mToolBar_title="@string/member_detail"
+        app:mToolBar_titleColor="@color/activity_text_color" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.fhzc.app.android.android.ui.view.widget.PullableScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/white"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <View
+                    android:background="@color/titlelineColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_size">
+                </View>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@color/linecolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:weightSum="4"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Eightyfive">
+                        <RelativeLayout
+                            android:id="@+id/healthImageView"
+                            android:layout_marginRight="@dimen/line_size"
+                            android:layout_weight="1"
+                            android:background="@drawable/lay_account_bt"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_marginTop="@dimen/fiveteenDp"
+                                android:background="@drawable/right_healthy"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="@dimen/thirtyfivedp"
+                                android:layout_height="@dimen/thirtyfivedp" />
+                            <TextView
+                                android:layout_marginBottom="@dimen/tenDp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="@color/numberitemColor"
+                                android:textSize="@dimen/thirteenSp"
+                                android:text="@string/healthtext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_marginRight="@dimen/line_size"
+                            android:layout_weight="1"
+                            android:background="@drawable/lay_account_bt"
+                            android:layout_width="0dp"
+                            android:id="@+id/tourismImageView"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/fiveteenDp"
+                                android:background="@drawable/right_travel"
+
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="@dimen/thirtyfivedp"
+                                android:layout_height="@dimen/thirtyfivedp" />
+                            <TextView
+                                android:layout_marginBottom="@dimen/tenDp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="@color/numberitemColor"
+                                android:textSize="@dimen/thirteenSp"
+                                android:text="@string/tourismtext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_marginRight="@dimen/line_size"
+                            android:layout_weight="1"
+                            android:background="@drawable/lay_account_bt"
+                            android:layout_width="0dp"
+                            android:id="@+id/artImageView"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/fiveteenDp"
+                                android:background="@drawable/right_steward"
+
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="@dimen/thirtyfivedp"
+                                android:layout_height="@dimen/thirtyfivedp" />
+                            <TextView
+                                android:layout_marginBottom="@dimen/tenDp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="@color/numberitemColor"
+                                android:textSize="@dimen/thirteenSp"
+                                android:text="@string/arttext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:background="@drawable/lay_account_bt"
+                            android:layout_width="0dp"
+                            android:id="@+id/busTourismImageView"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/fiveteenDp"
+                                android:background="@drawable/right_businesstravel"
+
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="@dimen/thirtyfivedp"
+                                android:layout_height="@dimen/thirtyfivedp" />
+                            <TextView
+                                android:layout_marginBottom="@dimen/tenDp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="@color/numberitemColor"
+                                android:textSize="@dimen/thirteenSp"
+                                android:text="@string/bustourism"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:paddingTop="@dimen/line_size"
+                        android:weightSum="4"
+                        android:layout_marginBottom="@dimen/line_size"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Eightyfive">
+                        <RelativeLayout
+                            android:layout_marginRight="@dimen/line_size"
+                            android:layout_weight="1"
+                            android:background="@drawable/lay_account_bt"
+                            android:layout_width="0dp"
+                            android:id="@+id/liveImageView"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/fiveteenDp"
+                                android:background="@drawable/right_extravagantlife"
+
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="@dimen/thirtyfivedp"
+                                android:layout_height="@dimen/thirtyfivedp" />
+                            <TextView
+                                android:layout_marginBottom="@dimen/tenDp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="@color/numberitemColor"
+                                android:textSize="@dimen/thirteenSp"
+                                android:text="@string/livetext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_marginRight="@dimen/line_size"
+                            android:layout_weight="1"
+                            android:background="@drawable/lay_account_bt"
+                            android:id="@+id/sportImageView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/fiveteenDp"
+                                android:background="@drawable/right_lovesport"
+
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="@dimen/thirtyfivedp"
+                                android:layout_height="@dimen/thirtyfivedp" />
+                            <TextView
+                                android:layout_marginBottom="@dimen/tenDp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="@color/numberitemColor"
+                                android:textSize="@dimen/thirteenSp"
+                                android:text="@string/sporttext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_marginRight="@dimen/line_size"
+                            android:layout_weight="1"
+                            android:background="@drawable/lay_account_bt"
+                            android:layout_width="0dp"
+                            android:id="@+id/collegeImageView"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/fiveteenDp"
+                                android:background="@drawable/right_bussinessschool"
+
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="@dimen/thirtyfivedp"
+                                android:layout_height="@dimen/thirtyfivedp" />
+                            <TextView
+                                android:layout_marginBottom="@dimen/tenDp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="@color/numberitemColor"
+                                android:textSize="@dimen/thirteenSp"
+                                android:text="@string/buscollegetext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:background="@drawable/lay_account_bt"
+                            android:layout_width="0dp"
+                            android:id="@+id/cubImageView"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_marginTop="@dimen/fiveteenDp"
+                                android:background="@drawable/right_club"
+
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="@dimen/thirtyfivedp"
+                                android:layout_height="@dimen/thirtyfivedp" />
+                            <TextView
+                                android:layout_marginBottom="@dimen/tenDp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="@color/numberitemColor"
+                                android:textSize="@dimen/thirteenSp"
+                                android:text="@string/cubtext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:background="@color/linecolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tenDp">
+                </View>
+
+                <RelativeLayout
+                    android:background="@drawable/lay_account_bt"
+                    android:id="@+id/rightLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/top_service_layout_height">
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/thirteenDp"
+                        android:gravity="center_vertical"
+                        android:text="@string/choosetext"
+                        android:textColor="@color/numbertitleColor"
+                        android:textSize="@dimen/fiveteensp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:drawablePadding="@dimen/elevenDps"
+                        android:textColor="@color/numbercontentColor"
+                        android:textSize="@dimen/thirteenSp"
+                        android:layout_marginRight="@dimen/bottom_menu_img_size"
+                        android:drawableRight="@drawable/list_tappable"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/feelchoosetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+                <View
+                    android:background="@color/linecolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_size">
+                </View>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:id="@+id/rootLayout"
+                   android:layout_height="match_parent">
+                   <LinearLayout
+                       android:padding="@dimen/twelvetyDp"
+                       android:id="@+id/item_gallery"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_vertical"
+                       android:orientation="vertical" >
+                   </LinearLayout>
+               </LinearLayout>
+
+        </LinearLayout>
+
+    </com.fhzc.app.android.android.ui.view.widget.PullableScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

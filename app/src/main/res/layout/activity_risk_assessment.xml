@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:id="@+id/systemMessageToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mToolBar_title="风险评测" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.fhzc.app.android.android.ui.view.widget.DJXWebView
+            android:id="@+id/webviewwe"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:layout_x="0.0dip"
+            android:layout_y="0.0dip" />
+
+        <ProgressBar
+            android:id="@+id/webDetailLoading"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:max="100"
+            android:progressDrawable="@drawable/web_load_progress_background"
+            android:secondaryProgress="0" />
+    </RelativeLayout>
+
+
+</LinearLayout>

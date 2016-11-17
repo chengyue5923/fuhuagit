@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:main_title="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/reportDetailToolbar"
+        android:layout_width="match_parent"
+        android:theme="@style/AppBaseTheme"
+        android:layout_height="@dimen/bottom_menu_height">
+        <TextView
+            android:layout_gravity="center"
+            android:text="@string/choose_package"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/cancle"
+            android:layout_marginRight="@dimen/bottom_menu_img_size"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:id="@+id/lineChoosePackage"
+        android:layout_below="@id/reportDetailToolbar"
+        android:background="@color/ht_diverLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"></View>
+    <LinearLayout
+        android:id="@+id/chooseItems"
+        android:layout_below="@id/lineChoosePackage"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:paddingBottom="@dimen/tenDp"
+            android:paddingTop="@dimen/tenDp"
+            android:layout_weight="1"
+            android:text="@string/choose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:paddingBottom="@dimen/tenDp"
+            android:paddingTop="@dimen/tenDp"
+            android:layout_weight="1"
+            android:text="@string/degrees"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:paddingBottom="@dimen/tenDp"
+            android:paddingTop="@dimen/tenDp"
+            android:layout_weight="1"
+            android:text="@string/interal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:paddingBottom="@dimen/tenDp"
+            android:paddingTop="@dimen/tenDp"
+            android:layout_weight="1"
+            android:text="@string/packages"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/lineItemsBottom"
+        android:layout_below="@id/chooseItems"
+        android:background="@color/ht_diverLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/threeDp"></View>
+    <ListView
+        android:layout_below="@id/lineItemsBottom"
+        android:id="@+id/choosePackagesLv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/ht_diverLine"
+        android:dividerHeight="@dimen/oneDp" >
+    </ListView>
+</RelativeLayout>

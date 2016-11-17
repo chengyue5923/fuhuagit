@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:id="@+id/sr_randp_rootlayout">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+           >
+
+            <RelativeLayout
+                android:background="@drawable/point_cusomer_view"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:orientation="vertical"
+                android:paddingTop="17dp">
+                <ImageView
+                    android:id="@+id/pointDetailView"
+                    android:layout_marginRight="@dimen/twelvetyDp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/yip_rangde_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/backFragment"
+                    android:padding="@dimen/tenDp"
+                    android:layout_marginLeft="@dimen/twentyDp"
+                    android:background="@drawable/yip_rangde_view"
+                    android:layout_width="@dimen/twentyDp"
+                    android:layout_height="@dimen/twentyDp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="您的积分"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/totalPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="67dp"
+                    android:paddingTop="20dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="60sp" />
+
+                <LinearLayout
+                    android:background="#55000000"
+                    android:id="@+id/pointDetailLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_alignParentBottom="true">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="可用积分"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/availablePoint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="1px"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="冻结积分"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/frozenPoint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="1px"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="即将过期"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/willExpiredPoint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_above="@id/pointDetailLayout"
+                    android:background="@color/white" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="#e6e6eb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="6dp">
+
+                <ImageView
+                    android:id="@+id/levelImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rightandpoint_blackvip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/orderRightLayout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/common_selector_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="23dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="0dp"
+                    android:text="我预约的权益"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:id="@+id/rightarrow"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@drawable/list_tappable" />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:drawableRight="@drawable/list_tappable"
+                    android:paddingLeft="6dp"
+                    android:text="海量权益 尽享高端"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/pointRecordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/common_selector_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="23dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="0dp"
+                    android:text="积分记录"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:drawableRight="@drawable/list_tappable"
+                    android:paddingLeft="6dp"
+                    android:text="积分变动详情"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginRight="@dimen/twelvetyDp"
+                android:layout_marginLeft="@dimen/twelvetyDp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:id="@+id/my_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:max="100"
+                    android:layout_centerVertical="true"
+                    android:progress="0"
+                    android:secondaryProgress="0"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/progressbar_color"/>
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:visibility="visible"
+                            android:id="@+id/viewfinal"
+                            android:background="@drawable/activity_point_view"
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:visibility="gone"
+                            android:id="@+id/viewvip"
+                            android:background="@drawable/activity_point_view"
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:visibility="gone"
+                            android:id="@+id/viewsilver"
+                            android:background="@drawable/activity_point_view"
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:visibility="gone"
+                            android:id="@+id/goldviews"
+                            android:background="@drawable/activity_point_view"
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:visibility="gone"
+                            android:id="@+id/blackgoldviews"
+                            android:background="@drawable/activity_point_view"
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/tenDp"
+                android:weightSum="5"
+                android:layout_marginRight="@dimen/twelvetyDp"
+                android:layout_marginLeft="@dimen/twelvetyDp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/apptextBlue"
+                    android:text="投资人"
+                    android:id="@+id/finalText"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="准会员"
+                    android:gravity="center"
+                    android:textColor="@color/appouttextBlue"
+
+                    android:id="@+id/viptext"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="银卡"
+                    android:id="@+id/silverText"
+                    android:textColor="@color/appouttextBlue"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="金卡"
+                    android:id="@+id/goldtext"
+                    android:textColor="@color/appouttextBlue"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="铂金卡"
+                    android:textColor="@color/appouttextBlue"
+
+                    android:id="@+id/blackgoldtext"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/twelvetyDp"
+                android:layout_marginLeft="@dimen/twelvetyDp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#9a999e"
+                    android:textSize="11sp"
+                    android:text="本年度在持有投资"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/numberFinancialText"
+                    android:textColor="#fe8220"
+                    android:textSize="11sp"
+                    android:text="50万"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#9a999e"
+                    android:textSize="11sp"
+                    android:text="成为银卡会员"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View
+                android:background="#efeef4"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/tenDp"/>
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_marginRight="@dimen/twelvetyDp"
+                android:layout_marginLeft="@dimen/twelvetyDp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/allTextView"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="全部"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/appColorBlue"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/availableTextView"
+                    android:text="获取"
+                    android:gravity="center"
+                    android:textColor="@color/appouttextBlue"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/useTextView"
+                    android:text="使用"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/appouttextBlue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_size"
+                android:background="@color/linecolor"/>
+            <com.fhzc.app.android.android.ui.view.widget.NoScrollListView
+                android:layout_width="match_parent"
+                android:divider="#e6e6eb"
+                android:focusable="false"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_marginLeft="@dimen/tenDp"
+                android:id="@+id/pointListView"
+                android:dividerHeight="1px"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

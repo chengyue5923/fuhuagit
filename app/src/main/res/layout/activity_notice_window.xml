@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+   >
+
+
+    <RelativeLayout
+        android:gravity="center"
+        android:background="@color/appColorBlue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_fiveDp">
+        <TextView
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:id="@+id/sureSignUpTextView"
+            android:textSize="20sp"
+            android:text="提示"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:padding="@dimen/tenDp"
+            android:id="@+id/delteImage"
+            android:layout_marginRight="@dimen/fiveteenDp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/deleteicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    
+    <View
+        android:background="@color/linecolor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"></View>
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_fiveDp">
+        <TextView
+            android:layout_marginLeft="@dimen/sixteenDp"
+            android:text="用户要求："
+            android:textColor="@color/titleTextColor"
+            android:textSize="@dimen/foureenSp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/numberText"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:text="3级及以上用户"
+            android:textColor="@color/titleTextColor"
+            android:textSize="@dimen/foureenSp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:background="@color/linecolor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"/>
+    <View
+        android:visibility="gone"
+        android:background="@color/linecolor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"/>
+    <TextView
+        android:textSize="15sp"
+        android:text="尊敬的客户：您好，您目前尚未入会，不能查看会员活动，请联系您的专属理财师或拨打热线电话【400-610-6100】申请入会，谢谢您的支持和配合。"
+        android:layout_marginRight="@dimen/twentyDp"
+        android:layout_marginLeft="@dimen/twentyDp"
+        android:layout_marginTop="@dimen/twentyDp"
+        android:layout_marginBottom="@dimen/twentyDp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<RelativeLayout-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="@dimen/Eightyfive">-->
+            <!--<TextView-->
+                <!--android:background="@drawable/activity_share_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:text="为他人报名"-->
+                <!--android:textSize="@dimen/foureenSp"-->
+                <!--android:id="@+id/shareButton"-->
+                <!--android:textColor="@color/appColorBlue"-->
+                <!--android:layout_width="@dimen/onehundfiftytyDp"-->
+                <!--android:layout_height="@dimen/fourtyfourDp" />-->
+        <!--</RelativeLayout>-->
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/tenDp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/fifityDp">
+            <TextView
+                android:background="@drawable/activity_sure_bg"
+                android:text="确认"
+                android:gravity="center"
+                android:id="@+id/sureButton"
+                android:textColor="@color/white"
+                android:textSize="@dimen/foureenSp"
+                android:layout_width="@dimen/onehundfiftytyDp"
+                android:layout_height="@dimen/fourtyfourDp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

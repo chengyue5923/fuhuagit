@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:id="@+id/activityDetailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:mToolBar_background="@color/transparence"
+        app:mToolBar_rightImage="@drawable/collect_n"
+        app:mToolBar_showRight="true"
+        app:mToolBar_title="@string/activity_detail"
+        app:mToolBar_titleColor="@color/activity_text_color" />
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+       >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"
+            android:background="@color/bottomlineColor" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:id="@+id/cancelSingUpLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_fiveDp">
+        <TextView
+            android:id="@+id/signUpCancelTextView"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/twentyDp"
+            android:layout_marginRight="@dimen/twentyDp"
+            android:layout_marginBottom="@dimen/fiveDp"
+            android:layout_marginTop="@dimen/fiveDp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="取消报名"
+            android:textColor="#666666"
+            android:textSize="@dimen/foureenSp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"
+            android:background="@color/linecolor" />
+       </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/plannerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_fiveDp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_size"
+                android:background="@color/bottomlineColor" />
+            <TextView
+                android:id="@+id/signUpPlannerActivityTextView"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/twentyDp"
+                android:layout_marginRight="@dimen/twentyDp"
+                android:layout_marginBottom="@dimen/fiveDp"
+                android:layout_marginTop="@dimen/fiveDp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/activity_detail_button_bg_new"
+                android:gravity="center"
+                android:text="分享给客户"
+                android:textColor="@color/white"
+                android:textSize="@dimen/foureenSp" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/singupLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_fiveDp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_marginRight="@dimen/twelvetyDp"
+                    android:layout_marginLeft="@dimen/twelvetyDp"
+                    android:layout_marginBottom="@dimen/fiveDp"
+                    android:layout_marginTop="@dimen/fiveDp"
+                    android:id="@+id/signUpForOtherActivityTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/activity_detail_button_new_bg"
+                    android:gravity="center"
+                    android:text="联系理财师"
+                    android:textColor="@color/appColorBlue"
+                    android:textSize="@dimen/foureenSp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/signUpActivityTextView"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/twelvetyDp"
+                    android:layout_marginRight="@dimen/twelvetyDp"
+                    android:layout_marginBottom="@dimen/fiveDp"
+                    android:layout_marginTop="@dimen/fiveDp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/activity_detail_button_bg_new"
+                    android:gravity="center"
+                    android:text="@string/signedup_activity_detail"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/foureenSp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_above="@id/bottomlayout"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activityDetailToolbar"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_size"
+                android:background="@color/ht_diverLine"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:minHeight="230dp"
+                    android:background="@drawable/default_pictures"
+                    android:id="@+id/activityImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                      />
+                <View
+                    android:minHeight="230dp"
+                    android:id="@+id/whiteView"
+                    android:visibility="gone"
+                    android:background="#f0ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:minHeight="230dp"
+                    android:visibility="gone"
+                    android:id="@+id/timeTextView"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:background="#00000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/activityTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginTop="28dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="标题"
+                android:textColor="@color/titleavtivity"
+                android:textSize="@dimen/textSixteenDp" />
+            <RelativeLayout
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/thirtyonedp">
+                <ImageView
+                    android:id="@+id/activitySingUpview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:drawableLeft="@drawable/activity_no_time_view"
+                    android:drawablePadding="@dimen/fiveDp"
+                    android:layout_marginLeft="@dimen/fiveteenDp"
+                    android:layout_toRightOf="@id/activitySingUpview"
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报名日期："
+                    android:textColor="@color/contentTextColor"
+                    android:textSize="@dimen/bottom_menu_text_size" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/fiveDp"
+                    android:id="@+id/signUpTimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/time"
+                    android:textColor="@color/contentTextColor"
+                    android:textSize="@dimen/bottom_menu_text_size" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Report_Text_margin_Left_size">
+                <TextView
+                    android:drawablePadding="@dimen/fiveDp"
+                    android:drawableLeft="@drawable/activity_time_view"
+                    android:layout_marginLeft="@dimen/fiveteenDp"
+                    android:id="@+id/activitytime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动日期："
+                    android:textColor="@color/contentTextColor"
+                    android:textSize="@dimen/bottom_menu_text_size" />
+
+                <TextView
+                    android:id="@+id/activityTimeTextView"
+                    android:layout_marginLeft="@dimen/fiveDp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/activitytime"
+                    android:textColor="@color/contentTextColor"
+                    android:textSize="@dimen/bottom_menu_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Report_Text_margin_Left_size">
+
+                <TextView
+                    android:drawablePadding="@dimen/fiveDp"
+                    android:drawableLeft="@drawable/activity_address_view"
+                    android:id="@+id/activityPlaceText"
+                    android:layout_marginLeft="@dimen/fiveteenDp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动地点："
+                    android:textColor="@color/contentTextColor"
+                    android:textSize="@dimen/bottom_menu_text_size" />
+
+                <TextView
+                    android:layout_toRightOf="@id/activityPlaceText"
+                    android:layout_marginLeft="@dimen/fiveDp"
+                    android:id="@+id/activityAddressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/contentTextColor"
+                    android:textSize="@dimen/bottom_menu_text_size" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/activityDesc"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sixteenDp"
+                    android:layout_marginTop="@dimen/seventeenSp"
+                    android:text="@string/activity_show"
+                    android:textColor="@color/contentTextColor"
+                    android:textSize="@dimen/thirteenSp" />
+                <View
+                    android:layout_marginLeft="@dimen/fifty_fiveDp"
+                    android:layout_toRightOf="@id/activityDesc"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="@dimen/line_size"
+                    android:background="@color/linecolor"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:visibility="visible"
+                android:id="@+id/activityContextTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twentyeightdp"
+                android:layout_marginRight="@dimen/twentyeightdp"
+                android:layout_marginTop="@dimen/sixteenDp"
+                android:textColor="@color/titleTextColor"
+                android:textSize="@dimen/thirteenSp" />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/show_more"
+                android:layout_below="@id/activityContextText"
+                android:layout_alignParentRight="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/moretextview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#529cff"
+                    android:text="查看更多" />
+
+                <ImageView
+                    android:layout_toRightOf="@id/moretextview"
+                    android:id="@+id/spread"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_details_more" />
+
+                <ImageView
+                    android:layout_toRightOf="@id/moretextview"
+                    android:id="@+id/shrink_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_shrink_up"
+                    android:visibility="visible" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="22dp"
+                android:layout_width="match_parent"
+                android:background="@color/linecolor"
+                android:layout_height="@dimen/tenDp"/>
+            <TextView
+                android:id="@+id/activityDescss"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:layout_marginTop="@dimen/seventeenSp"
+                android:text="精彩内容"
+                android:textColor="@color/contentTextColor"
+                android:textSize="@dimen/thirteenSp" />
+            <WebView
+                android:visibility="gone"
+                android:id="@+id/shouurl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/activityContextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twentyeightdp"
+                android:layout_marginRight="@dimen/twentyeightdp"
+                android:layout_marginTop="@dimen/sixteenDp"
+                android:textColor="@color/titleTextColor"
+                android:textSize="@dimen/thirteenSp" />
+
+        </LinearLayout>
+    </com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend>
+    <!--<RelativeLayout-->
+    <!--android:visibility="visible"-->
+    <!--android:id="@+id/bottomlayout"-->
+    <!--android:orientation="vertical"-->
+    <!--android:background="@color/white"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/fifty_fourDp">-->
+    <!--<View-->
+    <!--android:background="@color/bottomlineColor"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/line_size"/>-->
+    <!--<TextView-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:id="@+id/signUpForOtherActivityTextView"-->
+    <!--android:textSize="@dimen/foureenSp"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:background="@drawable/activity_detail_button_bg"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/signedup_activity_detail"-->
+    <!--android:layout_width="@dimen/onehundtwentyfiveDp"-->
+    <!--android:layout_height="@dimen/fourtyfourDp" />-->
+    <!--<TextView-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_toRightOf="@id/signUpForOtherActivityTextView"-->
+    <!--android:id="@+id/signUpActivityTextView"-->
+    <!--android:textSize="@dimen/foureenSp"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:background="@drawable/activity_detail_button_bg"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/signedup_activity_detail"-->
+    <!--android:layout_width="@dimen/onehundtwentyfiveDp"-->
+    <!--android:layout_height="@dimen/fourtyfourDp" />-->
+    <!--</RelativeLayout>-->
+</RelativeLayout>

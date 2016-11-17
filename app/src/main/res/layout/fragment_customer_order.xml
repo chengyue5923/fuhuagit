@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_back_ground"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/customerOrderProduct"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@drawable/common_selector_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="23dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/list_tappable"
+            android:paddingLeft="0dp"
+
+            android:text="客户预约的产品"
+            android:textColor="#46464B"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/customerOrderRight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@drawable/common_selector_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="23dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/list_tappable"
+            android:paddingLeft="0dp"
+
+            android:text="客户预约的权益"
+            android:textColor="#46464B"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/customerOrderActivity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@drawable/common_selector_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="23dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/list_tappable"
+            android:paddingLeft="0dp"
+
+            android:text="客户预约的活动"
+            android:textColor="#46464B"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

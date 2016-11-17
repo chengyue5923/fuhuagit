@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/appColorBlue"
+       >
+        <LinearLayout
+            android:id="@+id/backimagelayout"
+            android:gravity="center_vertical"
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/backImageView"
+                android:background="@drawable/back_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginRight="45dp"
+            android:background="@color/appColorBlue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/searchTextView"
+                android:text="2016年全年"
+                android:drawablePadding="@dimen/fiveteenDp"
+                android:paddingTop="@dimen/tenDp"
+                android:paddingBottom="@dimen/tenDp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:background="@drawable/activity_yeji_button_bg"
+                android:textSize="@dimen/fiveteensp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/titleRightIV"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/searchTextView"
+                android:background="@drawable/hapess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/bottomLayout"
+                        android:visibility="visible"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/backimagedd"
+                                android:background="@drawable/four"
+                                android:layout_width="match_parent"
+                                android:layout_height="140dp" />
+                            <com.fhzc.app.android.android.ui.view.widget.CircleImageView
+                                android:id="@+id/personinfoimage"
+                                android:layout_marginTop="@dimen/twentyfivedp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"/>
+                            <TextView
+                                android:id="@+id/nametext"
+                                android:layout_marginTop="@dimen/tenDp"
+                                android:layout_below="@id/personinfoimage"
+                                android:layout_centerHorizontal="true"
+                                android:text="---"
+                                android:textSize="@dimen/fiveteensp"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            android:background="@color/default_bk"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/Eighty">
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:textColor="#a5a5aa"
+                                    android:textSize="@dimen/twelvetySp"
+                                    android:layout_marginTop="@dimen/twelvetyDp"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="业绩"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:id="@+id/yejiText"
+                                    android:textColor="#ff811c"
+                                    android:textSize="@dimen/twentyeightdp"
+                                    android:layout_marginBottom="@dimen/twelvetyDp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="暂无业绩"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+
+                            </RelativeLayout>
+                            <View
+                                android:layout_marginBottom="@dimen/twelvetySp"
+                                android:layout_marginTop="@dimen/twelvetySp"
+                                android:background="@color/linecolor"
+                                android:layout_width="@dimen/line_size"
+                                android:layout_height="match_parent"/>
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:textColor="#a5a5aa"
+                                    android:textSize="@dimen/twelvetySp"
+                                    android:layout_marginTop="@dimen/twelvetyDp"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="排名"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:id="@+id/rankId"
+                                    android:textColor="#257cf2"
+                                    android:textSize="@dimen/twentyeightdp"
+                                    android:layout_marginBottom="@dimen/twelvetyDp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="无排名"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:background="@drawable/backperson"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/seventyDp">
+                            <TextView
+                                android:textSize="@dimen/seventeenSp"
+                                android:text="全国排名TOP10"
+                                android:gravity="center|left"
+                                android:textColor="#46464b"
+                                android:layout_marginRight="@dimen/sixDp"
+                                android:layout_marginLeft="@dimen/thirteenDp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/seventyDp" />
+
+                        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/NoDataText"
+                            android:visibility="gone"
+                            android:background="@color/white"
+                            android:textColor="@color/appColorBlue"
+                            android:textSize="@dimen/fiveteenDp"
+                            android:gravity="center_horizontal"
+                            android:text="没有数据信息"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <com.fhzc.app.android.android.ui.view.widget.NoScrollListView
+                            android:gravity="center"
+                            android:id="@+id/rangeListView"
+                            android:background="@color/white"
+                            android:layout_width="match_parent"
+                            android:focusable="false"
+                            android:dividerHeight="@dimen/line_size"
+                            android:divider="@color/linecolor"
+                            android:layout_height="match_parent"
+                            />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend>
+        <LinearLayout
+            android:background="@color/white"
+            android:visibility="gone"
+            android:id="@+id/topLayout"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.fhzc.app.android.android.ui.view.widget.NoScrollListView
+                android:gravity="center"
+                android:id="@+id/listViewyear"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:listSelector="@drawable/planner_listview_selector"
+                android:focusable="false"
+                android:layout_height="@dimen/twohundread"
+                />
+            <com.fhzc.app.android.android.ui.view.widget.NoScrollListView
+                android:gravity="center"
+                android:id="@+id/listViewjidu"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:focusable="false"
+                android:listSelector="@drawable/planner_listview_selector"
+                android:layout_height="@dimen/twohundread"
+                />
+            <com.fhzc.app.android.android.ui.view.widget.NoScrollListView
+                android:gravity="center"
+                android:id="@+id/listViewmonth"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:listSelector="@drawable/planner_listview_selector"
+
+                android:focusable="false"
+                android:layout_height="@dimen/twohundread"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

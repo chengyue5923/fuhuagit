@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeef4"
+    android:orientation="vertical">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mToolBar_title="会员规则" />
+
+    <com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#9a9a9c"
+                android:textSize="13sp"
+                android:layout_marginTop="20dp"
+                android:text="贵宾俱乐部会员是您在复华的身份的象征，为感谢您对复华资产的持续支持，复华将根据不同的会员等级，给您提供专享的会员权益服务。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#297ff6"
+                    android:text="Q"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#47464c"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:text="复华贵宾俱乐部会员分几个等级"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#297ff6"
+                    android:text="A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#47464c"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:text="复华贵宾俱乐部会员分为：银卡，金卡，黑金卡三个级别，不同的级别享有不同的权益消费权利，您可以通过增加投资金额、推荐会员或者参加活动来获得积分。提升会员等级。"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#297ff6"
+                    android:text="Q"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#47464c"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:text="会员等级是如何划分的？"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#297ff6"
+                    android:text="A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#47464c"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:text="会员分为个人会员和机构会员两种类型"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:textColor="#47464c"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:text="个人会员标准："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:textColor="#47464c"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:text="银卡会员：累计投资额在100万（含）至600万之间"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:textColor="#47464c"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:text="金卡会员：累计投资额在600万（含）至1000万之间"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:textColor="#47464c"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:text="黑金卡会员：累计投资额在1000万（含）以上"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:textColor="#47464c"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:text="机构会员标准："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:textColor="#47464c"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:text="银卡会员：累计投资额在600万（含）至1000万之间"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:textColor="#47464c"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:text="金卡会员：累计投资额在1000万（含）至3000万之间"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:textColor="#47464c"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/tenDp"
+                        android:text="黑金卡会员：累计投资额在3000万（含）以上"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginLeft="@dimen/tenDp"
+                android:layout_marginTop="30dp"
+                android:textSize="15sp"
+                android:text="备注:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="@dimen/tenDp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#47464c"
+                    android:textSize="13sp"
+                    android:text="1.会员级别根据客户历史实际投资额累计计算，客户级别只升不降；投资年化金额不满100万的为投资人不是潜在会员；投资年化金额满100万的投资人即为准会员，可以申请入会。"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#47464c"
+                    android:textSize="13sp"
+                    android:layout_marginTop="20dp"
+                    android:text="2.累计投资额计算方式为："
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#47464c"
+                    android:textSize="13sp"
+                    android:layout_marginTop="20dp"
+                    android:text="(01) 实际投资期限小于12个月的，按年化投资额折算投资金额；"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#47464c"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="20dp"
+                    android:text="(02) 实际投资期限大于（含）12个月的，按实际投资额计算投资金额；"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend>
+
+
+</LinearLayout>

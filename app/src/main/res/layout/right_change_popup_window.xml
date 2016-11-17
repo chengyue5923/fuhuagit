@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:contaxt="com.fhzc.app.android.android.ui.view.dialog.ActivityPopUpDialog">
+
+    <ImageView
+        android:id="@+id/activityBacksImageView"
+        android:padding="@dimen/tenDp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/tenDp"
+        android:layout_marginTop="@dimen/tenDp"
+        android:src="@mipmap/deletes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="@dimen/tenDp"
+        android:id="@+id/sureSignUpTextView"
+        android:textSize="@dimen/textSixteenDp"
+        android:gravity="center_horizontal"
+        android:text="@string/choose_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/itemActivityLauout"
+        android:layout_marginTop="@dimen/tenDp"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/textmapDp"
+        android:layout_marginRight="@dimen/textmapDp"
+        android:layout_below="@id/sureSignUpTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/nameTextView"
+                android:background="@null"
+                android:textSize="@dimen/textSixteenDp"
+                android:hint="@string/choose_supplier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:text="拜尔口腔"
+                android:drawableRight="@drawable/list_tappable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/textSixteenDp"
+                android:id="@+id/phoneNumberTextView"
+                android:layout_marginTop="@dimen/Report_time_text_size"
+                android:background="@null"
+                android:hint="@string/choose_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/Report_time_text_size"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:text="拜尔口腔"
+                android:drawableRight="@drawable/list_tappable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/Report_time_text_size"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/choose_integral"
+                android:textSize="@dimen/textSixteenDp"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:text="682"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/lineChangeView"
+        android:layout_below="@id/itemActivityLauout"
+        android:layout_marginTop="@dimen/tenDp"
+        android:background="@color/ht_diverLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"></View>
+
+
+
+    <TextView
+        android:layout_marginBottom="@dimen/tenDp"
+        android:layout_marginTop="@dimen/tenDp"
+        android:layout_below="@+id/lineChangeView"
+        android:id="@+id/signUpSureOtherTextView"
+        android:textColor="@color/white"
+        android:background="@color/title_text_7"
+        android:paddingRight="@dimen/sixtyDP"
+        android:paddingLeft="@dimen/sixtyDP"
+        android:paddingTop="@dimen/Report_Text_margin_Left_size"
+        android:paddingBottom="@dimen/Report_Text_margin_Left_size"
+        android:layout_centerInParent="true"
+        android:text="@string/sure_signedup_forother_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

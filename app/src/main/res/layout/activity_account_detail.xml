@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:common="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/linecolor"
+    android:orientation="vertical">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:id="@+id/accountDetailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:mToolBar_backIv="@drawable/title_back_white"
+        app:mToolBar_background="@color/appColorBlue"
+        app:mToolBar_showRight="false"
+        app:mToolBar_title="李洁洁"
+        app:mToolBar_titleColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onehundeightyDp"
+        android:background="@color/appColorBlue">
+
+        <com.fhzc.app.android.android.ui.view.widget.CircleImageView
+            android:id="@+id/person_info_avatar"
+            android:layout_width="@dimen/onehundseventeenDp"
+            android:layout_height="@dimen/onehundseventeenDp"
+            android:layout_centerInParent="true"
+            common:border_color="@color/white"
+            common:border_width="1dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/person_info_avatar"
+            android:layout_marginRight="@dimen/fatendp"
+            android:layout_toLeftOf="@id/person_info_avatar"
+            android:background="@drawable/happyservice" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onehundtenDp"
+        android:layout_marginTop="@dimen/tenDp"
+
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/thirteenDp"
+            android:paddingRight="@dimen/thirteenDp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="姓名"
+                android:textColor="@color/activity_text_color"
+                android:textSize="@dimen/fiveteensp" />
+
+            <TextView
+                android:id="@+id/plannerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/activity_text_color"
+                android:textSize="@dimen/fiveteensp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"
+            android:layout_marginLeft="@dimen/thirteenDp"
+            android:layout_marginRight="@dimen/thirteenDp"
+            android:background="@color/linecolor" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/callLayout"
+            android:layout_weight="1"
+            android:background="@drawable/common_selector_bg"
+            android:paddingLeft="@dimen/thirteenDp"
+            android:paddingRight="@dimen/thirteenDp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="电话"
+                android:textColor="@color/activity_text_color"
+                android:textSize="@dimen/fiveteensp" />
+
+            <TextView
+                android:id="@+id/plannerPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/lay_account_bt"
+                android:drawableRight="@drawable/planner_phone"
+                android:gravity="center_vertical"
+                android:text=""
+
+                android:textColor="@color/appColorBlue"
+                android:textSize="@dimen/fiveteensp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="@dimen/tenDp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/thirteenDp"
+            android:layout_marginRight="@dimen/thirteenDp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="职级"
+                android:textColor="@color/activity_text_color"
+                android:textSize="@dimen/fiveteensp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plannerLevel"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="市场总监"
+                android:textColor="@color/activity_text_color"
+                android:textSize="@dimen/fiveteensp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"
+            android:layout_marginLeft="@dimen/thirteenDp"
+            android:layout_marginRight="@dimen/thirteenDp"
+            android:background="@color/linecolor"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/thirteenDp"
+            android:layout_marginRight="@dimen/thirteenDp"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="所属分公司"
+                android:textColor="@color/activity_text_color"
+                android:textSize="@dimen/fiveteensp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/department"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/activity_text_color"
+                android:textSize="@dimen/fiveteensp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/contactPlanner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/thirteenDp"
+        android:paddingRight="@dimen/thirteenDp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="联系理财师"
+            android:textColor="@color/activity_text_color"
+            android:textSize="@dimen/fiveteensp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/title_message" />
+
+    </RelativeLayout>
+
+</LinearLayout>

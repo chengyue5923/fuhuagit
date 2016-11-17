@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:id="@+id/reportDetailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mToolBar_title="新闻详情"
+        app:mToolBar_titleColor="@color/activity_text_color" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/ScrollViewLayoutsd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_size"
+                android:background="@color/titlelineColor" />
+
+            <TextView
+                android:id="@+id/reportTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twelvetyDp"
+                android:layout_marginRight="@dimen/twelvetyDp"
+                android:layout_marginTop="@dimen/twentyfivedp"
+                android:textColor="@color/titleTextColor" />
+
+            <ImageView
+                android:id="@+id/reportImageView"
+                android:layout_width="@dimen/twohundfiftysixDp"
+                android:layout_height="@dimen/onehundeightyDp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/fiveteenDp"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/reportContextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginTop="@dimen/threetyDp"
+                android:textColor="@color/titleTextColor" />
+
+            <TextView
+                android:id="@+id/showimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fiveteenDp"
+                android:layout_marginRight="@dimen/fiveteenDp"
+                android:padding="10dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

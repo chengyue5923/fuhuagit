@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_marginRight="@dimen/twentytwoDp"
+    android:layout_marginLeft="@dimen/twentytwoDp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:background="@drawable/produce_success_dialog_bg"
+    android:orientation="vertical">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cancelSignUpTextView"
+        android:textSize="@dimen/sixteenSp"
+        android:textColor="@color/white"
+        android:background="@drawable/right_title_dialog_bg"
+        android:gravity="center"
+
+        android:text="@string/cancela_reservation_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftynineDp" />
+    <TextView
+        android:id="@+id/contentTextView"
+        android:gravity="center"
+        android:textColor="@color/titleTextColor"
+        android:layout_marginLeft="@dimen/threetyDp"
+        android:layout_marginRight="@dimen/threetyDp"
+        android:layout_marginTop="@dimen/fourtyDp"
+        android:layout_below="@id/cancelSignUpTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/seventeenDp"
+        android:text="@string/cancel_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_marginBottom="@dimen/twentyeightdp"
+        android:layout_marginTop="@dimen/fourtyDp"
+        android:layout_below="@id/contentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirtyfivedp">
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/cancelNotTextView"
+                android:background="@drawable/produce_cancel_dialog_bg"
+                android:textSize="@dimen/thirteenSp"
+                android:gravity="center"
+                android:textColor="@color/titleTextColor"
+                android:text="@string/cancel_not_password"
+                android:layout_marginRight="@dimen/sixDp"
+                android:layout_width="@dimen/onehundtwentyfiveDp"
+                android:layout_height="@dimen/thirtyonedp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/cancelTextView"
+                android:background="@drawable/activity_detail_button_bg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/thirteenSp"
+                android:gravity="center"
+                android:text="@string/cancal_now_password"
+                android:layout_marginLeft="@dimen/sixDp"
+                android:layout_width="@dimen/onehundtwentyfiveDp"
+                android:layout_height="@dimen/thirtyonedp" />
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+    
+    <!--<TextView-->
+        <!--android:layout_marginTop="@dimen/fourtyDp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@id/contentTextView"-->
+        <!--android:id="@+id/cancelNotText"-->
+        <!--android:padding="@dimen/Report_time_text_size"-->
+        <!--android:background="@drawable/activity_detail_button_bg"-->
+        <!--android:text="@string/sure"-->
+        <!--android:layout_marginBottom="@dimen/twentyeightdp"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/thirteenSp"-->
+        <!--android:layout_width="@dimen/onehundtwentythreeeDp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_height="@dimen/thirtyfivedp" />-->
+
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_centerHorizontal="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:background="@drawable/produce_success_dialog_bg"
+    android:orientation="vertical">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cancelSignUpTextView"
+        android:textSize="@dimen/sixteenSp"
+        android:textColor="@color/white"
+        android:background="@drawable/right_title_dialog_bg"
+        android:gravity="center"
+
+        android:text="@string/cancel_reservation_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftynineDp" />
+    <TextView
+        android:id="@+id/contentTextView"
+        android:gravity="center"
+        android:textColor="@color/titleTextColor"
+        android:layout_marginLeft="@dimen/threetyDp"
+        android:layout_marginRight="@dimen/threetyDp"
+        android:layout_marginTop="@dimen/fourtyDp"
+        android:layout_below="@id/cancelSignUpTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/seventeenDp"
+        android:text="@string/reservation_success_produce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="@dimen/fourtyDp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/contentTextView"
+        android:id="@+id/cancelsuxxessNotText"
+        android:padding="@dimen/Report_time_text_size"
+        android:background="@drawable/activity_detail_button_bg"
+        android:text="@string/sure"
+        android:layout_marginBottom="@dimen/twentyeightdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/thirteenSp"
+        android:layout_width="@dimen/onehundtwentythreeeDp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

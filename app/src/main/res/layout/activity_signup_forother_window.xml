@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:contaxt="com.fhzc.app.android.android.ui.view.dialog.ActivityPopUpDialog">
+
+    <RelativeLayout
+        android:background="@color/appColorBlue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifitynineDp">
+        <TextView
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/tenDp"
+            android:id="@+id/sureSignUpTextView"
+            android:textSize="@dimen/sixteenSp"
+            android:text="@string/signedup_forother_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="@dimen/fiveteenDp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/rightBacksImageView"
+            android:padding="@dimen/tenDp"
+            android:src="@drawable/deleteicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/condentionTextView"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_fourDp">
+            <TextView
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:textColor="@color/titleTextColor"
+                android:textSize="@dimen/foureenSp"
+                android:text="预约条件:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/condentionText"
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:textColor="@color/contentTextColor"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/foureenSp"
+                android:text="铂金会员"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/linecolor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"></View>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/knowLayout"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_fourDp">
+            <TextView
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:textColor="@color/titleTextColor"
+                android:textSize="@dimen/foureenSp"
+                android:text="报名须知:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/knowText"
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:textColor="@color/contentTextColor"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/foureenSp"
+                android:text="需提前五天报名"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/linecolor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"></View>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/busnessLayout"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_fourDp">
+            <TextView
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:textColor="@color/titleTextColor"
+                android:textSize="@dimen/foureenSp"
+                android:text="供应商:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/busnessText"
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:textColor="@color/contentTextColor"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/foureenSp"
+                android:text="拜耳口腔"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/linecolor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/pointLayout"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_fourDp">
+            <TextView
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:textColor="@color/titleTextColor"
+                android:textSize="@dimen/foureenSp"
+                android:text="所需积分:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/pointText"
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:textColor="@color/contentTextColor"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/foureenSp"
+                android:text="682"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/linecolor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/lay_account_bt"
+            android:id="@+id/timeLayout"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_fourDp">
+            <TextView
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:textColor="@color/titleTextColor"
+                android:textSize="@dimen/foureenSp"
+                android:text="预约时间:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_marginRight="@dimen/sixteenDp"
+                android:layout_marginLeft="@dimen/sixteenDp"
+                android:textColor="@color/contentTextColor"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/foureenSp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/linecolor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"></View>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sureButtonText"
+        android:layout_marginBottom="@dimen/twentyDp"
+        android:layout_marginTop="@dimen/twentyDp"
+        android:layout_gravity="center"
+        android:background="@drawable/activity_detail_button_bg"
+        android:gravity="center"
+        android:text="确认预约"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fiveteenDp"
+        android:layout_width="@dimen/onehundfiftytyDp"
+        android:layout_height="@dimen/fourtyfourDp" />
+
+
+
+</LinearLayout>

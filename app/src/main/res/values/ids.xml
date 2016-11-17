@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- EmptyLayout -->
+    <item type="id" name="empty_layout"/>
+    <item type="id" name="buttonEmpty"/>
+    <item type="id" name="buttonError"/>
+    <item type="id" name="buttonLoading"/>
+    <!-- 列表为空时的数据页面 -->
+    <item name="view_empty_v2_iv" type="id"/>
+    <item name="view_empty_v2_tv" type="id"/>
+    <item name="textViewMessage" type="id"/>
+    <item name="tag_position" type="id"/>
+    <item name="viewBanner" type="id"/>
+    <item name="viewBannerImage" type="id"/>
+</resources>

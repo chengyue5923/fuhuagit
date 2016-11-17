@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:id="@+id/toolBar_hotnews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mToolBar_title="@string/activity_hotnews" />
+    <com.fhzc.app.android.android.ui.view.widget.NewsAutoScrollBanner
+        android:id="@+id/vp_banner"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:background="@null"/>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/myTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#fafafa"
+        app:tabIndicatorColor="@color/appColorBlue"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/appColorBlue"
+        app:tabTextColor="@color/selected_deputy_text" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#fafafa"
+        android:paddingLeft="12dp"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/canlendar"
+            />
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c7c6cc"
+            android:textSize="10sp"
+            android:layout_marginLeft="8dp"
+            />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend
+            android:id="@+id/mScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.fhzc.app.android.android.ui.view.widget.NoScrollListView
+                    android:id="@+id/lv_hotnews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:divider="@null"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:scrollbars="none" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="100dp"
+                        android:text="走进复华资产·乐享财富人生"
+                        android:textColor="#cbcacf"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

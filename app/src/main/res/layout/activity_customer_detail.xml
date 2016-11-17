@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:common="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:id="@+id/customerDetailToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:background="@color/white"
+        app:mToolBar_rightImage="@drawable/title_message"
+        app:mToolBar_showRight="true"
+        app:mToolBar_title="" />
+
+    <!--<com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.fhzc.app.android.android.ui.view.widget.CircleImageView
+                        android:id="@+id/person_info_avatar"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="80dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_height="80dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/selected_peroninfo"
+                        common:border_color="@color/white"
+                        common:border_width="1dp" />
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/person_info_avatar"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="16dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/customerNameText"
+                            android:textSize="17sp"
+                            android:textColor="#47464c"
+                            android:text="李洁洁"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:background="@drawable/blgck_gold_sign_view"
+                            android:layout_marginTop="@dimen/tenDp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_marginRight="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/lookupmore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginRight="@dimen/tenDp"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:background="@color/linecolor"/>
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#47464c"
+                            android:textSize="22sp"
+                            android:text="2200"
+                            android:id="@+id/CustomerPointText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="13sp"
+                            android:text="客户积分"
+                            android:textColor="#9c9ba3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0.5dp"
+                        android:background="@color/linecolor"
+                        android:layout_marginBottom="@dimen/twelvetyDp"
+                        android:layout_marginTop="@dimen/twelvetyDp"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#47464c"
+                            android:textSize="22sp"
+                            android:id="@+id/cudtomerMoneyText"
+                            android:text="949万元"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="13sp"
+                            android:textColor="#9c9ba3"
+                            android:text="资产总额"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_marginRight="@dimen/twelvetyDp"
+                    android:layout_marginLeft="@dimen/twelvetyDp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/linecolor"/>
+                <RelativeLayout
+                    android:layout_marginTop="21dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/twelvetyDp"
+                    android:layout_marginLeft="@dimen/twelvetyDp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:drawableLeft="@drawable/notice_view_views"
+                        android:text="备注"
+                        android:textColor="#9b9a9f"
+                        android:textSize="15sp"
+                        android:id="@+id/noticelayout"
+                        android:drawablePadding="@dimen/tenDp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/notivityImage"
+                        android:background="@drawable/dropwindow_down"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+
+                        android:id="@+id/noticeTextView"
+                        android:textSize="15sp"
+                        android:textColor="#47464c"
+                        android:layout_below="@id/noticelayout"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/tenDp"
+                        android:layout_marginTop="@dimen/tenDp"
+                        android:text="需要及时沟通，产品即将到期"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="编辑备注"
+                    android:id="@+id/EditNoticeText"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="@dimen/twelvetyDp"
+                    android:drawablePadding="@dimen/tenDp"
+                    android:drawableLeft="@drawable/edit_notice_view"
+                    android:textColor="#2a7ff6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:background="@color/linecolor"
+                android:layout_height="@dimen/tenDp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/customerDetailTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    app:tabIndicatorColor="@color/appColorBlue"
+                    app:tabIndicatorHeight="3dp"
+                    app:tabSelectedTextColor="@color/appColorBlue"
+                    app:tabTextColor="@color/selected_deputy_text" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/customerDetailPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    <!--</ScrollView>-->
+    <!--</com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend>-->
+</LinearLayout>

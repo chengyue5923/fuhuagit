@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/fourteenDp"
+        android:layout_marginRight="@dimen/fourteenDp"
+        android:layout_marginTop="@dimen/twentyfivedp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/reportAdapterImge"
+            android:background="@mipmap/backimage"
+            android:layout_width="@dimen/Eightyeight"
+            android:layout_height="@dimen/seventyDp" />
+        <TextView
+            android:id="@+id/reportTitleAdaperText"
+            android:textColor="@color/activity_text_color"
+            android:textSize="@dimen/fiveteensp"
+            android:layout_marginLeft="@dimen/twentyDp"
+            android:layout_toRightOf="@id/reportAdapterImge"
+            android:text="[基金经理特点] 专注个股选择遵循相对价值"
+            android:paddingTop="@dimen/fiveDp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/reportPointText"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/elevenDp"
+            android:textColor="@color/reporttextColor"
+            android:layout_marginTop="@dimen/tenDp"
+            android:layout_below="@id/reportTitleAdaperText"
+            android:layout_marginLeft="@dimen/twentyDp"
+            android:layout_toRightOf="@id/reportAdapterImge"
+            android:text="投资理念，灵活且果断的操作风格。灵活且风格独特"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/bottomtimeTextView"
+            android:textColor="@color/reporttimetextColor"
+            android:textSize="@dimen/eightSp"
+            android:layout_marginBottom="@dimen/tenDp"
+            android:layout_marginTop="@dimen/fiveteenDp"
+            android:layout_alignParentRight="true"
+            android:text="2016-06-25  10:28"
+            android:layout_below="@id/reportPointText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:main_title="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activityDetailToolbar"
+        android:layout_width="match_parent"
+        android:theme="@style/AppBaseTheme"
+        android:layout_height="@dimen/bottom_menu_height">
+        <ImageView
+            android:padding="5dp"
+            android:background="@mipmap/back_default"
+            android:id="@+id/activityBackImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:text="@string/activity_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/activityCollectionImage"
+            android:layout_marginRight="@dimen/bottom_menu_img_size"
+            android:background="@drawable/collect_n"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_below="@id/activityDetailToolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/ht_diverLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"></View>
+
+        <ImageView
+            android:id="@+id/activityImageView"
+            android:background="@mipmap/backimage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Image_height_size" />
+        <TextView
+            android:padding="@dimen/Report_Text_margin_Left_size"
+            android:textColor="@color/black"
+            android:id="@+id/activityTextView"
+            android:text="订座欣赏百老汇经典音乐剧"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:paddingLeft="@dimen/Report_Text_margin_Left_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/time"
+                android:text="@string/activity_time_detail"
+                android:textSize="@dimen/Report_time_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/signUpTimeText"
+                android:textSize="@dimen/Report_time_text_size"
+                android:text=" 2016-7-12 00:00 至 2016-7-13 00:00"
+                android:layout_toRightOf="@id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/activitytime"
+                android:layout_marginTop="@dimen/Report_Text_margin_Left_size"
+                android:text="@string/signedup_time_detail"
+                android:textSize="@dimen/Report_time_text_size"
+                android:layout_below="@id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/Report_Text_margin_Left_size"
+                android:layout_below="@id/signUpTimeText"
+                android:id="@+id/activityTimeText"
+                android:textSize="@dimen/Report_time_text_size"
+                android:text=" 2016-7-16 00:00 至 2016-7-18 00:00"
+                android:layout_toRightOf="@id/activitytime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/avtivityPlace"
+                android:layout_marginTop="@dimen/Report_Text_margin_Left_size"
+                android:text="@string/activity_where_detail"
+                android:textSize="@dimen/Report_time_text_size"
+                android:layout_below="@id/activitytime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/Report_Text_margin_Left_size"
+                android:layout_below="@id/activityTimeText"
+                android:id="@+id/activityPlaceText"
+                android:textSize="@dimen/Report_time_text_size"
+                android:text=" 北京市朝阳区财富中心"
+                android:layout_toRightOf="@id/activitytime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="@dimen/Report_Text_margin_Left_size"
+            android:background="@color/ht_diverLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"></View>
+
+        <TextView
+            android:textColor="@color/black"
+            android:text="活动简介："
+            android:layout_marginTop="@dimen/Report_Text_margin_Left_size"
+            android:textSize="@dimen/Report_time_text_size"
+            android:paddingLeft="@dimen/Report_Text_margin_Left_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/black"
+            android:paddingBottom="@dimen/Report_Text_margin_Left_size"
+            android:paddingTop="@dimen/Report_Text_margin_Left_size"
+            android:paddingRight="@dimen/Report_Text_margin_Left_size"
+            android:paddingLeft="@dimen/Report_Text_margin_Left_size"
+            android:textSize="@dimen/Report_time_text_size"
+            android:text="1111111111dfgjdtyjsdtyjksdtykdykdkuduklrfu,lry,lry,lr7yy,.r111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+            android:id="@+id/activityContextText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_menu_height">
+
+        <View
+            android:background="@color/ht_diverLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"></View>
+
+        <TextView
+            android:id="@+id/signUpTextView"
+            android:textColor="@color/white"
+            android:background="@color/title_text_7"
+            android:paddingRight="@dimen/sixtyDP"
+            android:paddingLeft="@dimen/sixtyDP"
+            android:paddingTop="@dimen/Report_Text_margin_Left_size"
+            android:paddingBottom="@dimen/Report_Text_margin_Left_size"
+            android:layout_centerInParent="true"
+            android:text="@string/signedup_activity_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

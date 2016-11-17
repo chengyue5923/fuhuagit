@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/backImageRight"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/messageImage"
+            android:layout_marginRight="@dimen/tenDp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/messageRedImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/message_red_circle"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:visibility="gone" />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/TabLayout"
+            android:layout_toLeftOf="@id/messageImage"
+            android:layout_toRightOf="@id/backImageRight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="@dimen/twentyDp"
+            android:layout_marginLeft="@dimen/twentyDp"
+            android:background="@color/white"
+            app:tabIndicatorColor="#ecdbbd"
+            app:tabIndicatorHeight="0dp"
+            app:tabSelectedTextColor="#98979d"
+            app:tabTextColor="#98979d" />
+    </RelativeLayout>
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:background="@color/linecolor"
+        android:layout_height="@dimen/line_size"/>
+    <com.fhzc.app.android.android.ui.view.widget.CustomViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+    </com.fhzc.app.android.android.ui.view.widget.CustomViewPager>
+</LinearLayout>

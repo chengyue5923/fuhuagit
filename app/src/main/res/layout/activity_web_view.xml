@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <com.fhzc.app.android.android.ui.view.widget.CommonToolBar
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        app:mToolBar_title=""
+        app:mToolBar_titleColor="@color/activity_text_color" />
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"
+        android:background="@color/titlelineColor">
+
+    </View>
+
+    <com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend
+        android:id="@+id/scrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+    </com.fhzc.app.android.android.ui.view.widget.ScrollViewExtend>
+    <LinearLayout
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/ToolbarLayout"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+        <View
+            android:background="@color/appColorBlue"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imageLayout"
+                android:layout_marginLeft="@dimen/twentyDp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text=""
+                android:id="@+id/titleTextView"
+                android:textSize="16sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        </LinearLayout>
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/backFragmentlayout"
+        android:gravity="center"
+        android:background="@drawable/activity_backss_view"
+        android:layout_marginLeft="@dimen/fiveteenDp"
+        android:layout_marginTop="@dimen/thirtyonedp"
+        android:layout_width="@dimen/thirtyonedp"
+        android:layout_height="@dimen/thirtyonedp">
+        <ImageView
+
+            android:id="@+id/backImageView"
+            android:background="@drawable/back_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</RelativeLayout>

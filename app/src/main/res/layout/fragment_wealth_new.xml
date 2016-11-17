@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/rootLayout"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/tenDp"
+        android:layout_marginLeft="@dimen/twentyDp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <android.support.design.widget.TabLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:id="@+id/myTabLayout"
+            android:layout_height="40dp"
+            app:tabTextColor="@color/selected_deputy_text"
+            app:tabIndicatorColor="@color/appColorBlue"
+            app:tabIndicatorHeight="3dp"
+            android:background="@color/white"
+            app:tabSelectedTextColor="@color/appColorBlue"/>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:gravity="right"
+                android:id="@+id/messageLayout"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+               >
+
+                <ImageView
+                    android:id="@+id/messageIv"
+                    android:layout_width="@dimen/top_icon_height_width"
+                    android:layout_height="@dimen/top_icon_height_width"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/selected_message" />
+
+                <TextView
+                    android:id="@+id/messageRedImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/message_red_circle"
+                    android:gravity="center"
+                    android:text="12"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:id="@+id/myTabLayout"-->
+        <!--android:layout_height="40dp"-->
+        <!--app:tabTextColor="@color/selected_deputy_text"-->
+        <!--app:tabIndicatorColor="@color/appColorBlue"-->
+        <!--app:tabIndicatorHeight="3dp"-->
+        <!--android:background="@color/white"-->
+        <!--app:tabSelectedTextColor="@color/appColorBlue"/>-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
